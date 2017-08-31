@@ -5425,3 +5425,32 @@ footer {
     background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #E9FFCF), color-stop(100, #ccfda6));
     background-image: -webkit-linear-gradient(right, #E9FFCF 0%, #ccfda6 100%);
     background-image: linear-gradient(to left, #E9FFCF 0%, #ccfda6 100%); }
+
+.schedule_and_call {
+  display: inline-block;
+  margin: 10px 0 0 20px;
+  vertical-align: top; }
+  .schedule_and_call .call_button {
+    float: left;
+    display: block;
+    margin-right: 25px;
+    padding: 12px 25px;
+    font: 500 13px/18px 'Exo 2', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background-color: #5189ff;
+    border: 0;
+    border-radius: 25px; }
+    .schedule_and_call .call_button:hover {
+      color: #fff;
+      background-color: #3d75eb; }
+  .schedule_and_call .schedule {
+    margin: 0; }
+    .schedule_and_call .schedule i {
+      float: left;
+      display: block; }
+    .schedule_and_call .schedule span {
+      float: left;
+      display: block;
+      font-size: 13px; }

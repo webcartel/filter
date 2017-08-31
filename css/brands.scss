@@ -1,0 +1,14 @@
+// Страница брендов
+.popular_manufacturers {
+	padding: 0 31px;
+	border: 1px solid #e9eaec;
+	border-radius: 25px;
+
+	.item {
+		position: relative;
+		height: 150px;
+		border-right: 1px solid #e9eaec;
+		max-width: 246px;
+		z-index: 9999;
+	}
+}

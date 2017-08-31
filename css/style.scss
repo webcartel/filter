@@ -7149,3 +7149,63 @@ footer{
 }
 
 
+
+// Страница брендов
+.popular_manufacturers {
+	// padding: 0 31px;
+	// border: 1px solid #e9eaec;
+	// border-radius: 25px;
+
+	// .item {
+	// 	position: relative;
+	// 	height: 150px;
+	// 	border-right: 1px solid #e9eaec;
+	// 	max-width: 246px;
+	// 	z-index: 9999;
+	// }
+}
+
+
+
+
+
+
+// Блок с кнопкой обратного звонка и графиком работы в шапке
+.schedule_and_call {
+	display: inline-block;
+	margin: 10px 0 0 20px;
+	vertical-align: top;
+
+	.call_button {
+		float: left;
+		display: block;
+		margin-right: 25px;
+		padding: 12px 25px;
+		font: 500 13px/18px 'Exo 2', sans-serif;
+		text-transform: uppercase;
+		text-align: center;
+		color: #fff;
+		background-color: #5189ff;
+		border: 0;
+		border-radius: 25px;
+
+		&:hover {
+			color: #fff;
+			background-color: #5189ff - 20;
+		}
+	}
+
+	.schedule {
+		margin: 0;
+
+		i {
+			float: left;
+			display: block;
+		}
+		span {
+			float: left;
+			display: block;
+			font-size: 13px;
+		}
+	}
+}
