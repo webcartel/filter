@@ -1,0 +1,10 @@
+/images
+/landing
+/mobile
+/mobile-2
+/new-product
+/shortv2
+
+*.sublime-workspace
+*.sublime-project
+*.zip

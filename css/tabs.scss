@@ -1,0 +1,207 @@
+.tabs-block-wrap {
+	margin-bottom: 40px;
+
+	.page-title {
+		margin-bottom: 5px;
+		padding: 0;
+		text-align: center;
+		text-transform: none;
+		font-weight: 400;
+	}
+	.sub-title {
+		padding-bottom: 30px;
+		font: 400 16px/30px "PT sans", sans-serif;
+		color: #7e838c;
+		text-align: center;
+	}
+	
+	.tabs-block {
+
+		.tabs-btns {
+
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				display: flex;
+				li {
+					position: relative;
+					padding: 12px 5px;
+					width: 20%;
+					border: 1px solid #d5dbe1;
+					border-left: none;
+					&:first-child {
+						border-left: 1px solid #d5dbe1;
+						border-radius: 25px 0 0 0;
+					}
+					&:last-child {
+						background-color: #5189ff;
+						border-radius: 0 25px 0 0;
+						border-right: 1px solid #5189ff;
+						border-top: 1px solid #5189ff;
+						border-bottom: 1px solid #5189ff;
+						a {
+							font: 500 14px "Exo 2", sans-serif;
+							color: #fff;
+							text-transform: uppercase;
+						}
+					}
+					&.active {
+						border: 1px solid #5189ff;
+						z-index: 99;
+						&:before {
+							content: '';
+							position: absolute;
+							bottom: -5px;
+							left: 50%;
+							transform: translateX(-50%) rotate(-45deg);
+							height: 8px;
+							width: 8px;
+							background-color: #fff;
+							border-left: 1px solid #5189ff;
+							border-bottom: 1px solid #5189ff;
+						}
+						a {
+							span {
+								color: #5189ff !important;
+							}
+						}
+					}
+					a {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						height: 100%;
+						color: #7e838c;
+						font: 400 12px/18px "Exo 2", sans-serif;
+						text-transform: uppercase;
+						@media screen and (max-width: 992px) {
+							font: 400 11px/13px "Exo 2", sans-serif;
+						}
+						span {
+							&:first-child {
+								margin-right: 15px;
+								font: bold 30px/30px "Exo 2", sans-serif;
+								@media screen and (max-width: 992px) {
+									margin-right: 5px;
+									font: bold 26px/26px "Exo 2", sans-serif;
+								}
+							}
+							&:last-child {
+								color: #3b3d41;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.tabs-cnts {
+			margin-bottom: 25px;
+			padding: 50px;
+			min-height: 350px;
+			border-bottom: 1px solid #d5dbe1;
+			border-left: 1px solid #d5dbe1;
+			border-right: 1px solid #d5dbe1;
+			border-radius: 0 0 25px 25px;
+			
+			.tab-banner-wrap {
+				display: flex;
+
+				@media screen and (max-width: 1050px) {
+					flex-direction: column !important;
+					align-items: center !important;
+				}
+			}
+			.tab-banner {
+				position: relative;
+				flex: 1;
+				min-height: 300px;
+				padding: 30px;
+				background: #c1e2fd;
+				background: -moz-linear-gradient(left, #c1e2fd 0%, #f6fafe 100%);
+				background: -webkit-linear-gradient(left, #c1e2fd 0%,#f6fafe 100%);
+				background: linear-gradient(to right, #c1e2fd 0%,#f6fafe 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1e2fd', endColorstr='#f6fafe',GradientType=1 );
+				border-radius: 25px;
+				overflow: hidden;
+				@media screen and (max-width: 1050px) {
+					max-width: 650px !important;
+					width: 100% !important;
+				}
+				&:first-child {
+					margin-right: 30px;
+					@media screen and (max-width: 1050px) {
+						margin-right: 0 !important;
+						margin-bottom: 30px !important;
+					}
+				}
+
+				img {
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					@media screen and (max-width: 1200px) {
+						max-width: 180px;
+						max-height: 200px;
+						opacity: 0.7;
+					}
+				}
+
+				.title {
+					position: relative;
+					margin-top: 20px;
+					margin-bottom: 5px;
+					font: 400 21px/21px "Exo 2", sans-serif;
+					color: #3b3d41;
+					span {
+						margin-left: 10px;
+						padding: 2px 7px 3px 7px;
+						font: 400 14px/21px "PT sans", sans-serif;
+						color: #fff;
+						background-color: #6ba36d;
+						border-radius: 20px;
+					}
+				}
+				.red {
+					position: relative;
+					margin-bottom: 10px;
+					font: 400 14px/21px "PT sans", sans-serif;
+					color: #ff5b1a;
+				}
+
+				p {
+					position: relative;
+					margin: 0 0 4px 0;
+					// max-width: 300px;
+					font: 400 14px/18px "PT sans", sans-serif;
+					color: #3b3d41;
+				}
+
+				.mt-15 {
+					margin-top: 15px;
+				}
+				.mt-25 {
+					margin-top: 25px !important;
+				}
+
+				.button {
+					position: relative;
+					margin-top: 20px;
+					a {
+						display: inline-block;
+						padding: 10px 20px 11px 20px;
+						font: 500 14px/21px "Exo 2", sans-serif;
+						color: #fff;
+						text-transform: uppercase;
+						background-color: #5189ff;
+						border-radius: 20px;
+						&:hover {
+							background-color: #5189ff - 20;
+						}
+					}
+				}
+			}
+		}
+	}
+}

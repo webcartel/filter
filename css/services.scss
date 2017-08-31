@@ -1,0 +1,103 @@
+.services-page {
+
+	.page-title {
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.items {
+
+		.items-row {
+			display: flex;
+			justify-content: space-between;
+
+			.item {
+				position: relative;
+				display: flex;
+				align-items: center;
+				flex: 1;
+				margin-bottom: 30px;
+				height: 240px;
+				max-width: 530px;
+				border-radius: 25px;
+				overflow: hidden;
+
+				@media screen and (max-width: 1200px) {
+					max-width: 472px;
+				}
+				@media screen and (max-width: 1050px) and (min-width: 991px) {
+					max-width: 446px;
+				}
+				@media screen and (max-width: 991px) and (min-width: 767px) {
+					max-width: 349px;
+				}
+
+				&:first-child {
+					margin-right: 50px;
+				}
+
+				&:hover {
+					span {
+						padding-left: 55px;
+					}
+				}
+
+				img {
+					position: absolute;
+					bottom: 0;
+					right: 0;
+
+					@media screen and (max-width: 1050px) {
+						opacity: 0.8;
+					}
+					@media screen and (max-width: 991px) {
+						opacity: 0.5;
+					}
+				}
+
+				span {
+					position: relative;
+					display: block;
+					padding: 0 0 0 40px;
+					font: 400 24px/30px "Exo 2", sans-serif;
+					color: #373b3f;
+					transition: padding-left 0.3s;
+
+					@media screen and (max-width: 1050px) {
+						text-shadow: 1px 1px 0px white;
+					}
+				}
+			}
+
+			.item-1 {
+				background-image: -ms-linear-gradient(right, #BEEEFF 0%, #8CD9FF 100%);
+				background-image: -moz-linear-gradient(right, #BEEEFF 0%, #8CD9FF 100%);
+				background-image: -o-linear-gradient(right, #BEEEFF 0%, #8CD9FF 100%);
+				background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #BEEEFF), color-stop(100, #8CD9FF));
+				background-image: -webkit-linear-gradient(right, #BEEEFF 0%, #8CD9FF 100%);
+				background-image: linear-gradient(to left, #BEEEFF 0%, #8CD9FF 100%);
+			}
+
+			.item-2 {
+				background-image: -ms-linear-gradient(top right, #FFF8D0 0%, #FDE97D 100%);
+				background-image: -moz-linear-gradient(top right, #FFF8D0 0%, #FDE97D 100%);
+				background-image: -o-linear-gradient(top right, #FFF8D0 0%, #FDE97D 100%);
+				background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #FFF8D0), color-stop(100, #FDE97D));
+				background-image: -webkit-linear-gradient(top right, #FFF8D0 0%, #FDE97D 100%);
+				background-image: linear-gradient(to bottom left, #FFF8D0 0%, #FDE97D 100%);
+			}
+
+			.item-3 {
+				background-image: -ms-linear-gradient(right, #E9FFCF 0%, #ccfda6 100%);
+				background-image: -moz-linear-gradient(right, #E9FFCF 0%, #ccfda6 100%);
+				background-image: -o-linear-gradient(right, #E9FFCF 0%, #ccfda6 100%);
+				background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #E9FFCF), color-stop(100, #ccfda6));
+				background-image: -webkit-linear-gradient(right, #E9FFCF 0%, #ccfda6 100%);
+				background-image: linear-gradient(to left, #E9FFCF 0%, #ccfda6 100%);
+			}
+		}
+
+	}
+}
+
+

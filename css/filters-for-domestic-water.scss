@@ -1,0 +1,448 @@
+.domestic-water-page {
+
+	.page-title {
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.tiles {
+		margin-bottom: 70px;
+
+		.row-1 {
+			display: flex;
+			margin-bottom: 21px;
+			height: 383px;
+		}
+
+		.row-2 {
+			display: flex;
+			margin-bottom: 21px;
+			height: 181px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.col {
+			flex: 1px;
+			margin-right: 21px;
+			width: calc(100% / 3 - 21px);
+			height: 100%;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			.row-2 {
+				flex-direction: column;
+			}
+		}
+		
+		.item {
+			position: relative;
+			display: block;
+			padding: 25px 25px 0 25px;
+			height: 100%;
+			text-decoration: none;
+			overflow: hidden;
+
+			img {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				&.rt {
+					bottom: auto;
+					top: 0;
+					@media screen and (max-width: 1200px) {
+						top: auto;
+						bottom: 0;
+						transform: rotate(55deg);
+					}
+				}
+
+				@media screen and (max-width: 991px) {
+					opacity: 0.8;
+				}
+			}
+			.img_mod-1 {
+				@media screen and (max-width: 1200px) {
+					max-width: 140px !important;
+					max-height: 140px !important;
+				}
+			}
+			.img_mod-2 {
+				@media screen and (max-width: 1200px) {
+					max-height: 180px;
+				}
+			}
+			.img_mod-3 {
+				@media screen and (max-width: 1200px) {
+					max-height: 190px;
+					right: auto;
+					left: 0;
+				}
+			}
+
+			span {
+				position: relative;
+				display: block;
+				font: 400 22px/24px "Exo 2", sans-serif;
+				color: #3b3d41;
+				@media screen and (max-width: 1200px) {
+					text-shadow: 1px 1px 1px white;
+				}
+				@media screen and (max-width: 991px) {
+					font: 400 19px/21px "Exo 2", sans-serif;
+				}
+
+				.info_icon {
+					position: relative;
+					display: inline-block;
+					margin-left: 4px;
+					height: 14px;
+					width: 14px;
+					background: url(../images/domestic-water-tile-info-icon.png) 0 0 no-repeat;
+					vertical-align: middle;
+					cursor: pointer;
+				}
+			}
+
+			p {
+				position: relative;
+				margin-top: 15px;
+				font: 400 18px/21px "PT sans", sans-serif;
+				color: #3b3d41;
+				@media screen and (max-width: 1200px) {
+					text-shadow: 1px 1px 1px white;
+				}
+			}
+
+			ul {
+				position: relative;
+				margin: 20px 0 0 0;
+				padding: 0;
+				list-style: none;
+				li {
+					margin-bottom: 2px;
+					a {
+						display: inline-block;
+						margin: 0;
+						padding: 0;
+						font: 400 15px/15px "PT sans", sans-serif;
+						color: #3b3d41;
+						border-bottom: 1px solid #3b3d41 + 50;
+						transition: border-bottom-color 0.3s;
+						@media screen and (max-width: 1200px) {
+							text-shadow: 1px 1px 1px #fff;
+						}
+						&:hover {
+							border-bottom-color: transparent;
+						}
+					}
+				}
+			}
+
+			.btn-wrap {
+				position: relative;
+				margin-top: 20px;
+				a {
+					position: relative;
+					display: inline-block;
+					padding: 15px 30px;
+					font: 500 14px/18px "Exo 2", sans-serif;
+					color: #fff;
+					text-transform: uppercase;
+					background-color: #5189ff;
+					border-radius: 25px;
+					&:hover {
+						background-color: #5189ff - 20;
+					}
+				}
+			}
+
+		}
+
+		.clr-1 {
+			background-color: #bce8ff;
+		}
+		.clr-2 {
+			background-color: #e5eef5;
+		}
+		.clr-3 {
+			background-color: #fdf099;
+		}
+
+		.rl {
+			border-radius: 0 0 0 25px;
+		}
+		.rr {
+			border-radius: 0 0 25px 0;
+		}
+	}
+}
+
+
+
+.phone_send_form_1 {
+	margin: 0 0 50px 0;
+	padding: 28px;
+	background-color: #e4edf4;
+	border-radius: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@media screen and (max-width: 991px) and (min-width: 767px) {
+		flex-direction: column !important;
+	}
+
+	.text {
+		margin-right: 50px;
+		color: #5189ff;
+
+		@media screen and (max-width: 991px) and (min-width: 767px) {
+			margin-right: 0;
+			margin-bottom: 25px;
+		}
+
+		.text-1 {
+			margin-bottom: 5px;
+			font: bold 20px/21px "Exo 2", sans-serif;
+			text-transform: uppercase;
+		}
+		.text-2 {
+			font: 400 16px/18px "PT sans", sans-serif;
+		}
+	}
+
+	.form {
+		display: flex;
+
+		input[type="text"], input[type="tel"] {
+			padding: 13px 25px;
+			margin-right: 17px;
+			width: 220px;
+			font: 400 14px/18px "PT sans", sans-serif;
+			color:#7e838c;
+			border: 0;
+			border-radius: 25px;
+			outline: none;
+
+			@media screen and (max-width: 1200px) {
+				width: 180px;
+			}
+
+			@media screen and (max-width: 991px) and (min-width: 767px) {
+				width: 245px;
+			}
+
+			&::-webkit-input-placeholder {color:#7e838c;}
+			&::-moz-placeholder          {color:#7e838c;}
+			&:-moz-placeholder           {color:#7e838c;}
+			&:-ms-input-placeholder      {color:#7e838c;}
+		}
+		button {
+			padding: 13px 25px;
+			width: 140px;
+			font: 500 14px/16px "Exo 2", sans-serif;
+			letter-spacing: 1px;
+			color: #fff;
+			text-transform: uppercase;
+			background-color: #5189ff;
+			border: 0;
+			border-radius: 25px;
+
+			&:hover {
+				background-color: #5189ff - 20;
+			}
+		}
+	}
+}
+
+
+
+
+.work_examples {
+	margin-bottom: 40px;
+
+	.work_examples_slider_wrap {
+		position: relative;
+	}
+
+	.title {
+		margin-bottom: 40px;
+		font: 400 28px/30px "Exo 2", sans-serif;
+		color: #3b3d41;
+		text-align: center;
+	}
+
+	.work_examples_slider {
+		min-height: 374px;
+		background-color: #ebf0f6;
+		border-radius: 25px;
+
+		.slide {
+			display: flex;
+
+			.details {
+				flex: 1;
+				
+				.details_title {
+					margin-bottom: 16px;
+					padding: 17px 35px 18px 35px;
+					border-bottom: 1px solid #f9fbfc;
+
+					.where {
+						margin-bottom: 4px;
+						font: 400 22px/30px "Exo 2", sans-serif;
+						color: #3b3d41;
+					}
+					.what {
+						font: 400 16px/18px "PT sans", sans-serif;
+						color: #3b3d41;
+					}
+				}
+
+				.item {
+					margin-bottom: 16px;
+					padding-left: 35px;
+
+					.text-1 {
+						margin-bottom: 8px;
+						font: 400 16px/18px "PT sans", sans-serif;
+						color: #7e838c;
+					}
+					.text-2 {
+						font:500 18px/21px "Exo 2", sans-serif;
+						color: #3b3d41;
+					}
+				}
+			}
+			.image {
+				flex: 2;
+				display: block;
+				border-radius: 25px;
+				overflow: hidden;
+
+				img {
+					display: inline-block;
+					height: 100%;
+				}
+			}
+		}
+
+	}
+
+	.sliderdots {
+		position: absolute;
+		bottom: 0;
+		right: 24%;
+		width: 170px;
+		z-index: 999;
+
+		.slick-dots {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			margin: 0;
+			padding: 10px 25px;
+			width: 100%;
+			background-color: rgba(255, 255, 255, 0.8);
+			border-radius: 25px 25px 0 0;
+			z-index: 1000;
+			text-align: center;
+
+			li {
+				background-color: #7e838c;
+				cursor: pointer !important;
+
+				&.slick-active {
+					background-color: #1a8aff;
+				}
+			}
+		}
+
+		.sliderarrows {
+			position: relative;
+		}
+
+		.slider_arrow_l {
+			position: absolute;
+			left: 25px;
+			top: -26px;
+			margin: 0;
+			padding: 0;
+			width: 20px;
+			height: 14px;
+			border-radius: 0;
+			background: url(../images/slider_arrow_l.png) 0 0 no-repeat;
+			transform: rotate(0);
+			z-index: 1005;
+			cursor: pointer;
+		}
+		.slider_arrow_r {
+			position: absolute;
+			right: 25px;
+			top: -26px;
+			left: auto;
+			margin: 0;
+			padding: 0;
+			width: 20px;
+			height: 14px;
+			border-radius: 0;
+			background: url(../images/slider_arrow_r.png) 0 0 no-repeat;
+			transform: rotate(0);
+			z-index: 1005;
+			cursor: pointer;
+		}
+	}
+}
+
+
+
+
+.popular_ptoducts {
+
+	h2 {
+		display: inline-block;
+		margin-right: 30px !important;
+		font: 400 28px/1.2 "Exo 2", sans-serif;
+		color: #373b3f;
+		margin: 54px 0 25px;
+		position: relative;
+	}
+
+	ul {
+		display: inline-block;
+		padding: 0;
+		list-style: none;
+		vertical-align: middle;
+
+		li {
+			display: inline-block;
+			margin-right: 2px;
+			padding: 6px 18px;
+			border: 1px solid transparent;
+			cursor: pointer;
+
+			&.active {
+				border: 1px solid #5189ff;
+				border-radius: 25px;
+				a {
+					color: #3b3d41;
+					border-bottom: none;
+				}
+			}
+
+			a {
+				display: inline-block;
+				padding-bottom: 1px;
+				font: 400 16px/20px "PT sans", sans-serif;
+				color: #5189ff;
+				border-bottom: 1px dotted #5189ff;
+			}
+		}
+	}
+
+}

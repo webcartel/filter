@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Title</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,500,500i,600,600i,700,700i,800,800i,900,900i%7CPT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/jquery.scrollbar.css">
+
+	<link rel="stylesheet" href="css/flipclock.css">
+
+	<link rel="stylesheet" href="css/flag-css.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+	<div class="top-message text-center">
+
+		<div class="container">
+
+			<div class="inner">Весенние скидки до 30% <a href="#" target="_blank">Узнать больше</a></div>
+
+			<button type="button" class="btn btn-close"></button>
+
+		</div>
+
+	</div>
+
+	<div class="top-bar">
+
+		<div class="container">
+
+			<!--lang-->
+
+			<div class="lang">
+
+				Язык:
+
+				<select class="selectpicker">
+
+					<option selected>Рус</option>
+
+					<option>Укр</option>
+
+					<option>Eng</option>
+
+				</select>
+
+			</div>
+
+			<!--lang end-->
+
+
+
+			<!--city-->
+
+			<div class="city">
+
+				Город:
+
+				<select class="selectpicker">
+
+					<option selected>Киев</option>
+
+					<option>Днепр</option>
+
+					<option>Николаев</option>
+
+					<option>Львов</option>
+
+				</select>
+
+			</div>
+
+			<!--city end-->
+
+
+
+			<!--schedule-->
+
+			<div class="schedule">
+
+				<i class="icon icon-clock"></i> Пн-ПТ с 9:00 до 20:00 СБ-ВС с 10:00 до 18:00
+
+			</div>
+
+			<!--schedule end-->
+
+
+
+			<!--menu extra-->
+
+			<nav class="menu-extra fright">
+
+				<ul class="list-inline">
+
+					<li><a href="#" class="underline underline-black">Доставка и оплата</a></li>
+
+					<li><a href="#" class="underline underline-black">Установка и гарантия</a></li>
+
+					<li><a href="#" class="underline underline-black">Контакты</a></li>
+
+				</ul>
+
+			</nav>
+
+			<!--menu extra end-->
+
+		</div>
+
+	</div>
+
+
+
+	<div class="container header-first">
+
+
+
+		<!--btn-hamburger-->
+
+		<button class="btn btn-hamburger">
+
+			<i class="icon icon-bar"></i>
+
+			<i class="icon icon-bar"></i>
+
+			<i class="icon icon-bar"></i>
+
+		</button>
+
+		<!--btn-hamburger end-->
+
+
+
+		<!--logo-->
+
+		<a href="./" class="logo">
+
+			<img src="images/logo.png" alt="Filter.ua">
+
+		</a>
+
+		<!--logo end-->
+
+
+
+		<!--tel-->
+
+		<div class="tel">
+
+			<i class="icon icon-phone fleft"></i>
+
+			<div class="dropdown caret-blue p-12">
+
+				<button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+					0 800 504 506
+
+					<span class="caret"></span>
+
+				</button>
+
+				<ul class="dropdown-menu">
+
+					<li>(044) 384 21 30</li>
+
+					<li>(067) 489-49-42 <strong>Киевстар</strong></li>
+
+					<li>(099) 147-64-63 <strong>МТС</strong></li>
+
+					<li>(093) 170-00-41 <strong>Life</strong></li>
+
+				</ul>
+
+			</div>
+
+			<div>Бесплатно по Украине</div>
+
+		</div>
+
+		<!--tel end-->
+
+		
+
+		<!--Request a call-->
+
+		<div class="request-call">
+
+			<strong>Заказать звонок</strong>
+
+			<form action="1">
+
+				<div class="input-group">
+
+					<input type="tel" placeholder="Мы перезвоним Вам за 30 секунд" class="form-control">
+
+					<div class="input-group-btn">
+
+						<button type="button" class="btn"  data-toggle="modal" data-target="#modal-success"> <i class="fa fa-angle-right"></i> </button>
+
+					</div>
+
+				</div>
+
+			</form>
+
+		</div>
+
+		<!--Request a call end-->
+
+
+
+		<!--cart-->
+
+		<div class="header-cart fright">
+
+			<!--<i class="icon icon-cart"></i>
+
+			<div class="content">
+
+				<h6>Ваша корзина</h6>
+
+				<div class="text-gray">Нет товаров</div>
+
+			</div>-->
+
+			<a href="javascript:void(0);"  data-toggle="modal" data-target="#modal-cart">
+
+				<i class="icon icon-cart"></i>
+
+				<div class="content">
+
+					<h6>Ваша корзина</h6>
+
+					<div class="text-gray"><span class="count">2</span> товара <span class="price">33 899 <span class="currency">грн</span></span></div>
+
+				</div>
+
+			</a>
+
+		</div>
+
+		<!--cart end-->
+
+	</div>
+
+
+
+	<hr>
+
+
+
+	<div class="container header-second">
+
+		<!--menu main-->
+
+		<nav class="menu-main">
+
+			<ul class="list-inline text-center">
+
+				<li class="active"><a href="sub-catalog.html">питьевая вода</a></li>
+
+				<li><a href="catalog.html">бытовая вода</a></li>
+
+				<li><a href="catalog.html">сменные фильтры и засыпки</a></li>
+
+				<li><a href="catalog.html">Дополнения и запчасти</a></li>
+
+				<li><a href="catalog.html">Услуги</a></li>
+
+				<li><a href="catalog.html">% Акции</a></li>
+
+				<li class="search">
+					<a href="catalog.html" id="search_block_open"><i class="icon icon-search"></i></a>
+					
+					<!-- search-block -->
+					<form action="/" class="search-block" id="search-block">
+						<button type="submit" class="search_button_submit" title="Поиск по сайту"><i class="icon icon-search icon_search_inside"></i></button>
+						<label>
+							<input type="text" placeholder="Поиск">
+							<div class="search_close" id="search_block_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+						</label>
+					</form>
+					<!-- search-block end -->
+
+				</li>
+
+			</ul>
+
+		</nav>
+
+		<!--menu main end-->
+
+	</div>
+
+
+
+
+
+
+
+</header>
+
