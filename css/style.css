@@ -1317,9 +1317,6 @@ hr {
     .product a:hover {
       text-decoration: none;
       color: #1a8aff; }
-      .product a:hover img {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1); }
       .product a:hover.review {
         color: #373b3f; }
   .product .title {
@@ -1795,6 +1792,14 @@ hr {
 
 .slider-single .more .icon-arrow-right {
   margin-top: -3px; }
+
+.slider-single a.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: block; }
 
 /*slider-random*/
 .slider-random {

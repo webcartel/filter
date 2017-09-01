@@ -1645,8 +1645,8 @@ hr{
 			text-decoration: none;
 			color: $color-blue;
 			img{
-				-webkit-transform: scale(1.1);
-				transform: scale(1.1);
+				// -webkit-transform: scale(1.1);
+				// transform: scale(1.1);
 			}
 			&.review{
 				color: $color-black-light;
@@ -2262,6 +2262,14 @@ hr{
 		.icon-arrow-right{
 			margin-top: -3px;
 		}
+	}
+	a.slide {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: block;
 	}
 }
 

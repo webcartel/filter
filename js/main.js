@@ -691,19 +691,12 @@ $(function(){
 	/*slider single*/
 
 	$('.slider-single').slick({
-
-		arrows: false,
-
+		arrows: true,
 		dots: true,
-
 		fade: true,
-
 		autoplay: true,
-
 		autoplaySpeed: 5000,
-
 		cssEase: 'linear'
-
 	});
 
 
