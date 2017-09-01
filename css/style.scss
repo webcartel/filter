@@ -1172,7 +1172,6 @@ textarea.form-control{
 	}
 	.menu-extra{
 		margin-right: 75px;
-		margin-left: 125px;
 	}
 	.bootstrap-select.btn-group .dropdown-toggle .filter-option, .dropdown .dropdown-toggle .filter-option{
 		margin-right: -3px;
@@ -2257,6 +2256,9 @@ hr{
 	}
 	.slick-slide{
 		outline: none;
+		img {
+			max-width: 100%;
+		}
 	}
 	.more{
 		.icon-arrow-right{
@@ -2270,6 +2272,41 @@ hr{
 		height: 100%;
 		width: 100%;
 		display: block;
+	}
+	.slick-dots {
+		position: absolute;
+	}
+	@media screen and (max-width: 1200px) and (min-width: 1050px) {
+		h3 {
+			top: 82px;
+			left: 78px;
+			font: 700 22px/1.3 "Exo 2", sans-serif;
+		}
+		.slick-dots {
+			margin: -84px 0 75px 72px;
+		}
+	}
+	@media screen and (max-width: 1050px) and (min-width: 991px) {
+		h3 {
+			top: 87px;
+			left: 78px;
+			font: 700 20px/1.3 "Exo 2", sans-serif;
+		}
+		.slick-dots {
+			position: absolute;
+			margin: -47px 0 75px 72px;
+		}
+	}
+	@media screen and (max-width: 991px) and (min-width: 767px) {
+		h3 {
+			top: 64px;
+			left: 78px;
+			font: 700 20px/1.3 "Exo 2", sans-serif;
+		}
+		.slick-dots {
+			position: absolute;
+			margin: -46px 0 75px 72px;
+		}
 	}
 }
 
@@ -2535,6 +2572,10 @@ hr{
 .section-tab{
 	margin-top: -110px;
 	padding: 130px 0 70px;
+	.row {
+		display: flex;
+		align-items: center;
+	}
 }
 
 /*reviews*/
@@ -2733,7 +2774,10 @@ main{
 	&#front{
 		border-top: none;
 		.slider-single {
-			margin-bottom: 14px;
+			margin-bottom: 24px;
+			@media screen and (max-width: 991px) and (min-width: 767px) {
+				margin-bottom: 10px;
+			}
 		}
 	}
 }
@@ -3217,7 +3261,14 @@ article{
 			padding-top: 20px;
 		}
 		.image{
-			float: left;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				max-height: 170px;
+				width: auto;
+				transition: all 0s;
+			}
 		}
 		.title{
 			display: inline;
@@ -3252,6 +3303,11 @@ article{
 			}
 		}
 		&:hover{
+			.image {
+				img {
+					max-height: 100%;
+				}
+			}
 			.inner{
 				padding-top: 25px;
 				.label{
@@ -4184,6 +4240,9 @@ article{
 			margin-top: 14px;
 		}
 	}
+	img {
+		max-width: 100%;
+	}
 }
 
 /*.icons-svg*/
@@ -5010,7 +5069,8 @@ footer{
 		margin: -1px 12px 0;
 	}
 	.menu-catalog{
-		padding: 23px 10px 0;
+		// padding: 23px 10px 0;
+		padding: 23px 10px 0 78px;
 	}
 	.menu-catalog.clear-water ul+ul{
 		padding-left: 10px;
@@ -6313,7 +6373,8 @@ footer{
 	}
 
 	.items {
-		margin-top: 85px;
+		// margin-top: 85px;
+		margin-top: -4px;
 
 		.col-sm-4 {
 			@media screen and (max-width: 991px) {
@@ -7253,6 +7314,9 @@ footer{
 				font-size: 20px;
 			}
 		}
+	}
+	.menu-extra {
+		margin-left: 125px;
 	}
 	.schedule_and_call {
 		display: inline-block;
