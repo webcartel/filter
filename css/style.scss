@@ -1172,6 +1172,7 @@ textarea.form-control{
 	}
 	.menu-extra{
 		margin-right: 75px;
+		margin-left: 125px;
 	}
 	.bootstrap-select.btn-group .dropdown-toggle .filter-option, .dropdown .dropdown-toggle .filter-option{
 		margin-right: -3px;
@@ -1203,6 +1204,7 @@ textarea.form-control{
 /*menu extra*/
 .menu-extra{
 	display: inline-block;
+
 	li{
 		padding: 0 20px;
 		&:first-child{
@@ -2722,6 +2724,9 @@ main{
 	border-top: 1px solid #e9e9e9;
 	&#front{
 		border-top: none;
+		.slider-single {
+			margin-bottom: 14px;
+		}
 	}
 }
 
@@ -3550,6 +3555,44 @@ article{
 			font-size: 13px;
 		}
 	}
+	.slick-slide {
+		img {
+			margin: 0 auto;
+		}
+	}
+
+	// Pagination
+	.pagination {
+		margin: 30px 0 15px 0;
+		list-style: none;
+		font: 500 14px/1 "Exo 2", sans-serif;
+		color: rgb(51, 122, 183);
+		li {
+			padding: 5px 13px;
+			border: 1px solid #e5e5e5;
+			border-right: 0;
+			cursor: pointer !important;
+			&:first-child {
+				margin-left: 0px;
+				border-top-left-radius: 4px;
+				border-bottom-left-radius: 4px;
+			}
+			&:last-child {
+				border-top-right-radius: 4px;
+				border-bottom-right-radius: 4px;
+				border-right: 1px solid #e5e5e5;
+			}
+
+			&.active {
+				position: relative;
+				margin: 0;
+				border: 1px solid #1a8aff !important;
+				background-color: #1a8aff;
+				color: #fff;
+				z-index: 99;
+			}
+		}
+	}
 }
 
 /*block-buy*/
@@ -4101,6 +4144,7 @@ article{
 .tabs-content-white{
 	margin-top: 46px;
 	margin-bottom: 70px;
+	padding: 0 15px;
 	.block-title{
 		text-align: left;
 		margin-top: -6px;
@@ -7149,20 +7193,30 @@ footer{
 }
 
 
-
 // Страница брендов
-.popular_manufacturers {
-	// padding: 0 31px;
-	// border: 1px solid #e9eaec;
-	// border-radius: 25px;
+.brands {
+	
+	.page-title {
+		font: bold 28px/1.2 "Exo 2",sans-serif;
+		text-transform: uppercase;
+	}
 
-	// .item {
-	// 	position: relative;
-	// 	height: 150px;
-	// 	border-right: 1px solid #e9eaec;
-	// 	max-width: 246px;
-	// 	z-index: 9999;
-	// }
+	// Популярные производители
+	.popular_manufacturers {
+		// padding: 0 31px;
+		// border: 1px solid #e9eaec;
+		// border-radius: 25px;
+
+		// .item {
+		// 	position: relative;
+		// 	height: 150px;
+		// 	border-right: 1px solid #e9eaec;
+		// 	max-width: 246px;
+		// 	z-index: 9999;
+		// }
+	}
+
+
 }
 
 
@@ -7171,41 +7225,85 @@ footer{
 
 
 // Блок с кнопкой обратного звонка и графиком работы в шапке
-.schedule_and_call {
-	display: inline-block;
-	margin: 10px 0 0 20px;
-	vertical-align: top;
-
-	.call_button {
-		float: left;
-		display: block;
-		margin-right: 25px;
-		padding: 12px 25px;
-		font: 500 13px/18px 'Exo 2', sans-serif;
-		text-transform: uppercase;
-		text-align: center;
-		color: #fff;
-		background-color: #5189ff;
-		border: 0;
-		border-radius: 25px;
-
-		&:hover {
-			color: #fff;
-			background-color: #5189ff - 20;
+.header-2 {
+	.logo {
+		@media screen and (max-width: 1200px) {
+			margin-right: 30px;
+		}
+		@media screen and (max-width: 1050px) {
+			margin-right: 19px;
 		}
 	}
-
-	.schedule {
-		margin: 0;
-
-		i {
-			float: left;
-			display: block;
-		}
-		span {
-			float: left;
-			display: block;
+	.tel {
+		@media screen and (max-width: 1050px) {
 			font-size: 13px;
+			width: auto;
+			.dropdown-toggle {
+				font-size: 20px;
+			}
+		}
+	}
+	.schedule_and_call {
+		display: inline-block;
+		margin: 10px 0 0 20px;
+		vertical-align: top;
+
+		@media screen and (max-width: 1200px) {
+			margin: 10px 0 0 10px;
+		}
+		@media screen and (max-width: 1050px) {
+			margin: 10px 0 0 0px;
+		}
+		@media screen and (max-width: 991px) {
+			margin-top: 3px;
+		}
+
+		.call_button {
+			float: left;
+			display: block;
+			margin-right: 25px;
+			padding: 12px 25px;
+			font: 500 13px/18px 'Exo 2', sans-serif;
+			text-transform: uppercase;
+			text-align: center;
+			color: #fff;
+			background-color: #5189ff;
+			border: 0;
+			border-radius: 25px;
+
+			@media screen and (max-width: 1200px) {
+				margin-right: 10px;
+				padding: 10px 16px;
+				font: 500 12px/17px 'Exo 2', sans-serif;
+			}
+
+			@media screen and (max-width: 1050px) {
+				padding: 10px 11px;
+				font: 500 11px/17px 'Exo 2', sans-serif;
+			}
+
+			&:hover {
+				color: #fff;
+				background-color: #5189ff - 20;
+			}
+		}
+
+		.schedule {
+			margin: 0;
+
+			i {
+				float: left;
+				display: block;
+			}
+			span {
+				float: left;
+				display: block;
+				font-size: 13px;
+
+				@media screen and (max-width: 1200px) {
+					font-size: 12px;
+				}
+			}
 		}
 	}
 }
