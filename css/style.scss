@@ -7286,19 +7286,55 @@ footer{
 		text-transform: uppercase;
 	}
 
-	// Популярные производители
-	.popular_manufacturers {
-		// padding: 0 31px;
-		// border: 1px solid #e9eaec;
-		// border-radius: 25px;
+	.brands-slider {
 
-		// .item {
-		// 	position: relative;
-		// 	height: 150px;
-		// 	border-right: 1px solid #e9eaec;
-		// 	max-width: 246px;
-		// 	z-index: 9999;
-		// }
+		.slide {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 16px 20px 16px 20px;
+			min-height: 130px;
+			border-right: 1px solid #e5e5e5;
+			width: 245px;
+
+			.image {
+				position: relative;
+				width: 100%;
+				height: 70px;
+				img {
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					display: block;
+					max-width: 100%;
+				}
+			}
+
+			.country {
+				font: 400 14px/24px "PT sans", sans-serif;
+				color: #7e838c;
+
+				span {
+					display: inline-block;
+					margin-right: 6px;
+					margin-left: 12px;
+					img {
+						display: block;
+						max-width: 12px;
+					}
+				}
+			}
+		}
+
+		.slick-arrow {
+			margin-top: -30px;
+		}
 	}
 
 	.all-brands {

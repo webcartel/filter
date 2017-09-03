@@ -1069,4 +1069,18 @@ $(document).ready(function() {
 		prevArrow:'<button class="slider_arrow_l"></button>',
 		nextArrow:'<button class="slider_arrow_r"></button>', 
 	});
+
+
+
+	/* brands-slider */
+	$('#brands-slider').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		variableWidth: true,
+		lazyLoad: 'ondemand',
+		lazyLoadBuffer: 0,
+		slidesToShow: 4,
+		slidesToScroll: 1
+	});
 });
