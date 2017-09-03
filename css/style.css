@@ -5625,15 +5625,34 @@ footer {
           font-size: 12px; } }
 
 .modal-checkout {
-  background: linear-gradient(to right, #ffffff 0%, #ffffff 42%, #eaf0f6 42%, #eaf0f6 100%); }
+  background: linear-gradient(to right, #ffffff 0%, #ffffff 42%, #e8f0f7 42%, #e8f0f7 100%); }
+  @media screen and (max-width: 992px) {
+    .modal-checkout {
+      background: #fff !important;
+      overflow: hidden; } }
   .modal-checkout .modal-body {
     padding: 0; }
   .modal-checkout .left-col {
     padding: 0 81px 80px 97px;
     width: 42%; }
+    @media screen and (max-width: 1200px) and (min-width: 992px) {
+      .modal-checkout .left-col {
+        padding: 0 34px 80px 50px !important; } }
+    @media screen and (max-width: 992px) {
+      .modal-checkout .left-col {
+        float: none !important;
+        padding-bottom: 0 !important;
+        width: 100% !important; } }
   .modal-checkout .right-col {
     padding: 0;
     width: 58%; }
+    @media screen and (max-width: 992px) {
+      .modal-checkout .right-col {
+        float: none !important;
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+        width: 100% !important;
+        background-color: #e8f0f7 !important; } }
   .modal-checkout .form-block {
     margin-bottom: 50px; }
   .modal-checkout .modal-title .checkbox {
@@ -5696,27 +5715,95 @@ footer {
           background-color: #e3e4e6;
           border-radius: 50%;
           z-index: 999;
-          border-color: transparent; }
+          border-color: transparent;
+          transition: all 0.3s; }
   .modal-checkout .checkout-cart-block {
     padding: 0 47px 0 33px; }
-    .modal-checkout .checkout-cart-block .items .item {
-      display: flex;
-      justify-content: space-between;
-      padding: 15px;
-      background-color: #fff;
-      border-radius: 20px; }
-      .modal-checkout .checkout-cart-block .items .item .image {
-        max-width: 180px; }
-        .modal-checkout .checkout-cart-block .items .item .image img {
-          max-width: 100%; }
-      .modal-checkout .checkout-cart-block .items .item .amount {
-        max-width: 90px;
-        font: 400 16px "PT sans", sans-serif;
-        color: #7e838c; }
-      .modal-checkout .checkout-cart-block .items .item .price {
-        max-width: 140px;
-        padding: 0 15px;
-        font: 500 24px "Exo 2", sans-serif;
-        color: #3b3d41; }
-        .modal-checkout .checkout-cart-block .items .item .price span {
-          font: 500 16px "PT sans", sans-serif; }
+    @media screen and (max-width: 992px) {
+      .modal-checkout .checkout-cart-block {
+        padding: 0 33px 0 33px !important; } }
+    .modal-checkout .checkout-cart-block .items {
+      margin-bottom: 50px; }
+      .modal-checkout .checkout-cart-block .items .item {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 12px 0;
+        padding: 15px 5px 15px 5px;
+        background-color: #fff;
+        border-radius: 25px; }
+        .modal-checkout .checkout-cart-block .items .item .image {
+          max-width: 160px; }
+          .modal-checkout .checkout-cart-block .items .item .image img {
+            max-width: 100%; }
+        .modal-checkout .checkout-cart-block .items .item .info {
+          padding-top: 10px; }
+          .modal-checkout .checkout-cart-block .items .item .info .product-title {
+            margin-bottom: 5px; }
+            .modal-checkout .checkout-cart-block .items .item .info .product-title a {
+              font: 400 16px "PT sans", sans-serif;
+              color: #3b3d41; }
+          .modal-checkout .checkout-cart-block .items .item .info .brand {
+            margin: 0 0 15px 0;
+            font: 400 16px "PT sans", sans-serif;
+            color: #7e838c; }
+          .modal-checkout .checkout-cart-block .items .item .info .code {
+            display: inline-block;
+            padding: 6px 15px;
+            font: 400 14px "PT sans", sans-serif;
+            color: #3b3d41;
+            background-color: #eff0f1;
+            border-radius: 20px; }
+        .modal-checkout .checkout-cart-block .items .item .amount {
+          padding-top: 10px;
+          width: 50px;
+          font: 400 16px "PT sans", sans-serif;
+          color: #7e838c;
+          text-align: center; }
+        .modal-checkout .checkout-cart-block .items .item .price {
+          padding: 5px 15px 0 15px;
+          max-width: 140px;
+          font: 500 24px "Exo 2", sans-serif;
+          color: #3b3d41; }
+          .modal-checkout .checkout-cart-block .items .item .price span {
+            font: 500 16px "PT sans", sans-serif; }
+  .modal-checkout .checkout-total-block {
+    margin-top: 35px;
+    padding: 0 15px 0 0; }
+    .modal-checkout .checkout-total-block .total-price {
+      float: right;
+      clear: both;
+      font: 400 14px "PT sans", sans-serif;
+      text-transform: uppercase; }
+      .modal-checkout .checkout-total-block .total-price .price {
+        margin-left: 40px;
+        font: 600 20px "Exo 2", sans-serif; }
+        .modal-checkout .checkout-total-block .total-price .price .small {
+          font: 400 14px "PT sans", sans-serif;
+          text-transform: none; }
+    .modal-checkout .checkout-total-block .checkout-button-block {
+      float: right;
+      padding: 20px 0;
+      width: 250px;
+      text-align: center; }
+      .modal-checkout .checkout-total-block .checkout-button-block button {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 12px;
+        padding: 15px 45px;
+        font: 500 16px "Exo 2", sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        border: 0;
+        border-radius: 25px;
+        background-color: #1b8aff; }
+        .modal-checkout .checkout-total-block .checkout-button-block button:hover {
+          background-color: #0776eb; }
+      .modal-checkout .checkout-total-block .checkout-button-block a {
+        display: inline-block; }
+        .modal-checkout .checkout-total-block .checkout-button-block a:hover {
+          text-decoration: underline; }
+  .modal-checkout .info-text {
+    margin: 51px auto 0 auto;
+    max-width: 90%;
+    font: 400 12px/25px Arial,sans-serif;
+    color: #9ba2ac; }
