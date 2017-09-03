@@ -1,587 +1,1307 @@
-<?php include('header.html') ?>
-<main id="popups">
-
-	<div class="container">
-		<h1 class="page-title">Popups</h1>
-
-		<!--modal buy-in-1-click-->
-		<h2 class="block-title">Купить в 1 клик</h2>
-		<div class="content">
-			<button type="button" class="btn" data-toggle="modal" data-target="#modal-buy-in-1-click">
-				Купить в 1 клик
-			</button>
-			<div class="modal fade" id="modal-buy-in-1-click" tabindex="-1" role="dialog">
-				<div class="modal-dialog modal-xs" role="document">
-					<div class="modal-content">
-						<form action="buy-in-1-click" class="form-buy-in-1-click">
-							<div class="modal-header">
-								<button type="button" class="btn-close btn-close-gray" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
-								<h4 class="modal-title">Укажите номер телефона, мы свяжемся <br> с вами в течении 30 секунд</h4>
-							</div>
-							<div class="modal-body">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Ваше имя">
-									<div class="help-block">Введите Ваше имя</div>
-								</div>
-								<div class="form-group">
-									<input type="tel" placeholder="+380" class="form-control">
-									<div class="help-block">Введите правильный номер телефона</div>
-									<div class="help-block help-block-gray">Пример +38(099)-999-99-99</div>
-								</div>
-								<div class="text-center"><button type="submit" class="btn btn-submit btn-load">Отправить</button></div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--modal buy-in-1-click end-->
-
-		<!--modal success-->
-		<h2 class="block-title">Спасибо</h2>
-		<div class="content">
-			<button type="button" class="btn" data-toggle="modal" data-target="#modal-success">
-				Спасибо
-			</button>
-			<div class="modal fade" id="modal-success" tabindex="-1" role="dialog">
-				<div class="modal-dialog modal-xs" role="document">
-					<div class="modal-content">
-						<div class="valign-middle">
-							<div class="modal-header">
-								<button type="button" class="btn-close btn-close-gray" data-dismiss="modal"	aria-label="Close"><span aria-hidden="true"></span></button>
-								<h4 class="modal-title">Спасибо!</h4>
-							</div>
-							<div class="modal-body text-center">
-								Ожидайте звонок от нашего <br>
-								консультанта
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--modal success end-->
-
-		<!--modal cheaper-->
-		<h2 class="block-title">Дешевле? Можно!</h2>
-		<div class="content">
-			<button type="button" class="btn" data-toggle="modal" data-target="#modal-cheaper">
-				Дешевле? Можно!
-			</button>
-			<div class="modal fade" id="modal-cheaper" tabindex="-1" role="dialog">
-				<div class="modal-dialog modal-sm" role="document">
-					<div class="modal-content">
-						<form action="cheaper" class="form-cheaper">
-							<div class="modal-header">
-								<button type="button" class="btn-close btn-close-gray" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
-								<h4 class="modal-title">Дешевле? Можно!</h4>
-							</div>
-							<div class="modal-body">
-								<p>Мы следим за рынком и стараемся предложить лучшую цену. <br>
-									Но мы всегда рады обсудить её с покупателем! <br>
-									Уверены, что сможем договориться ;)</p>
-								<p>Оставьте номер телефона и наш менеджер перезвонит Вам.</p>
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Ваше имя">
-									<div class="help-block">Введите Ваше имя</div>
-								</div>
-								<p>Вставьте ссылку на сайт, где вы нашли <strong>Mineral Plus Base 6 Фильтр обратного осмоса</strong>  дешевле</p>
-								<div class="form-group">
-									<input type="tel" placeholder="+380" class="form-control">
-									<div class="help-block">Введите правильный номер телефона</div>
-									<div class="help-block help-block-gray">Пример +38(099)-999-99-99</div>
-								</div>
-								<div class="text-center"><button type="submit" class="btn btn-submit btn-load">Отправить</button></div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--modal cheaper end-->
-
-		<!--modal purchase-on-credit-->
-		<h2 class="block-title">Покупка товара в кредит</h2>
-		<div class="content">
-			<button type="button" class="btn" data-toggle="modal" data-target="#modal-purchase-on-credit">
-				Покупка товара в кредит
-			</button>
-			<div class="modal fade" id="modal-purchase-on-credit" tabindex="-1" role="dialog">
-				<div class="modal-dialog modal-md" role="document">
-					<div class="modal-content">
-						<form action="cheaper" class="form-cheaper">
-							<div class="modal-header">
-								<button type="button" class="btn-close btn-close-gray" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
-								<h4 class="modal-title modal-title-big">Покупка товара в кредит</h4>
-							</div>
-							<div class="modal-body">
-								<p>Для оформления кредита необходимо нажать кнопку «Купить», перейти к оформлению заказа, либо продолжить покупки и добавить дополнительный товар в «Корзину». </p>
-								<p>В момент подтверждения заказа по телефону, сообщить менеджеру Ваши ФИО, номер заказа, телефон и желание оформить товар в кредит с указанием желаемого срока 9, 12, 24, 36 месяцев. </p>
-								<ul class="list-unstyled list-unstyled-title">
-									<li><strong>Условия кредитования:</strong></li>
-									<li>— Кредит оформляется на безналичную стоимость товара грн.</li>
-									<li>— Минимальный взнос 10% - 519 грн.</li>
-									<li>— Единоразовая комиссия 1,5% - 78 грн.</li>
-									<li>— Ежемесячно 1,5% - 78 грн.</li>
-								</ul>
-								<div class="credit-tariff">
-									<div class="row">
-										<div class="col-xs-12 col-sm-3">
-											<div class="title">кредит “9”</div>
-											<div class="content">9 платежей по</div>
-											<div class="price">597 <span class="currency">грн</span></div>
-											<button class="btn btn-buy">Купить</button>
-										</div>
-										<div class="col-xs-12 col-sm-3">
-											<div class="title">кредит “12”</div>
-											<div class="content">12 платежей по</div>
-											<div class="price">466 <span class="currency">грн</span></div>
-											<button class="btn btn-buy">Купить</button>
-										</div>
-										<div class="col-xs-12 col-sm-3">
-											<div class="title">кредит “24”</div>
-											<div class="content">24 платежей по</div>
-											<div class="price">268 <span class="currency">грн</span></div>
-											<button class="btn btn-buy">Купить</button>
-										</div>
-										<div class="col-xs-12 col-sm-3">
-											<div class="title">кредит “36”</div>
-											<div class="content">36 платежей по</div>
-											<div class="price">203 <span class="currency">грн</span></div>
-											<button class="btn btn-buy">Купить</button>
-										</div>
-									</div>
-								</div>
-								<div class="text-orange">Оформление кредита возможно по всей Украине!</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--modal purchase-on-credit end-->
-
-		<!--modal ways-of-delivery-->
-		<h2 class="block-title">Способы доставки</h2>
-		<div class="content">
-			<button type="button" class="btn" data-toggle="modal" data-target="#modal-ways-of-delivery">
-				Способы доставки
-			</button>
-			<div class="modal fade" id="modal-ways-of-delivery" tabindex="-1" role="dialog">
-				<div class="modal-dialog modal-lg" role="document">
-					<div class="modal-content">
-
-						<div class="modal-header">
-							<button type="button" class="btn-close btn-close-gray" data-dismiss="modal"
-									aria-label="Close"><span aria-hidden="true"></span></button>
-							<h4 class="modal-title modal-title-big">Способы доставки</h4>
-						</div>
-						<div class="modal-body">
-							<div class="wrapper-blue visible-inline-block">
-								Доставка всех <span class="text-blue">кувшинов</span>, <span class="text-blue">сменных элементов</span>,
-								и <span class="text-blue">комплектующих</span>
-								<br>
-								по Киеву и регионам стоимостью свыше 200 грн составляет 40 грн
-							</div>
-
-							<div style="height: 23px"></div>
-							<div class="item-left-right clearfix">
-								<div class="left">
-									<img src="images/marker.png" alt="marker">
-								</div>
-								<div class="right">
-									<div class="title">Самовывоз в Киеве</div>
-									<div class="content text-gray">
-										<p>Вы можете самостоятельно забрать свой заказ из офиса нашей компании <br>
-										в любой рабочий день, предварительно согласовав наличие продукции на складе.</p>
-									</div>
-								</div>
-							</div>
-							<div class="item-left-right clearfix">
-								<div class="left">
-									<img src="images/box.png" alt="box">
-								</div>
-								<div class="right">
-									<div class="title">Курьером по Киеву</div>
-									<div class="content text-gray">
-										<p>Курьер нашей компании доставит Ваш заказ в обозначенное время.</p>
-									</div>
-								</div>
-							</div>
-							<div class="item-left-right clearfix">
-								<div class="left">
-									<img src="images/car.png" alt="car">
-								</div>
-								<div class="right">
-									<div class="title">Курьерские службы по Украине</div>
-									<div class="content text-gray">
-										<p>Мы можем предложить Вам воспользоваться услугами курьерских служб: <br>
-										Новая почта, Ин-Тайм,  Автолюкс, Гюнсел и др.</p>
-									</div>
-								</div>
-							</div>
-
-							<div style="height: 17px"></div>
-
-							<div class="wrapper-blue visible-inline-block">
-								Доставка и монтаж системы производятся <strong>в один и тот же день</strong>, что удобно <br>
-								и выгодно - Вы сразу сможете наслаждаться чистой водой.
-							</div>
-
-							<div class="text-orange">*Доставка распространяется по всей Украине, где действует покрытие почтовых служб.</div>
-							<p><br></p>
-							<p class="text-center"><strong>Мы открыты к Вашим предложениям и готовы <br>
-								рассмотреть другие варианты.</strong></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--modal ways-of-delivery end-->
-
-		<!--modal payment-methods-->
-		<h2 class="block-title">Способы оплаты</h2>
-		<div class="content">
-			<button type="button" class="btn" data-toggle="modal" data-target="#modal-payment-methods">
-				Cпособы оплаты
-			</button>
-			<div class="modal fade" id="modal-payment-methods" tabindex="-1" role="dialog">
-				<div class="modal-dialog modal-md" role="document">
-					<div class="modal-content">
-
-						<div class="modal-header">
-							<button type="button" class="btn-close btn-close-gray" data-dismiss="modal"
-									aria-label="Close"><span aria-hidden="true"></span></button>
-							<h4 class="modal-title modal-title-big">Способы оплаты</h4>
-						</div>
-						<div class="modal-body">
-
-							<div class="item-left-right clearfix">
-								<div class="left">
-									<img src="images/purse.png" alt="marker">
-								</div>
-								<div class="right">
-									<div class="title">Наличными курьеру</div>
-									<div class="content text-gray">
-										<p>Вы можете оплатить наличными курьеру при доставке <br>
-											или монтаже приобретенной системы очистки воды.</p>
-									</div>
-								</div>
-							</div>
-							<div class="item-left-right clearfix">
-								<div class="left">
-									<img src="images/payment-to-the-card-account.png" alt="box">
-								</div>
-								<div class="right">
-									<div class="title">Оплата на карточный счет</div>
-									<div class="content text-gray">
-										<p>Осуществляется в банковском отделении через кассу или <br>
-											с помощью онлайн-банкинга. Реквизиты подскажут наши менеджеры.</p>
-									</div>
-								</div>
-							</div>
-							<div class="item-left-right clearfix">
-								<div class="left">
-									<img src="images/transfer-to-company-account.png" alt="car">
-								</div>
-								<div class="right">
-									<div class="title">Перевод на счет компании</div>
-									<div class="content text-gray">
-										<p>Перевод денежных средств на банковский счет компании. <br>
-											Реквизиты подскажут наши менеджеры.</p>
-									</div>
-								</div>
-							</div>
-							<div class="item-left-right clearfix">
-								<div class="left">
-									<img src="images/other-payment-methods.png" alt="car">
-								</div>
-								<div class="right">
-									<div class="title">Другие способы оплаты</div>
-									<div class="content text-gray">
-										<p>Через платежные методы PayU (Visa/MasterCard/Eurocard; <br>
-											терминалы: ПриватБанка, Ibox; Приват24;)</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="wrapper-blue visible-inline-block">
-								При заказе системы очистки в регион и отказе от монтажа подмоечных питьевых систем, вы получаете <strong>скидку 150 грн</strong> на проточный фильтр <br>
-								и <strong>200 грн</strong> на фильтр обратного осмоса.
-							</div>
-
-							<p><br></p>
-							<p class="text-center"><strong>Во всех вопросах мы всегда идем навстречу нашим клиентам. <br>
-								Позвоните прямо сейчас и мы обязательно обсудим Ваши предложения.</strong></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--modal payment-methods end-->
-
-		<!--modal gift-->
-		<h2 class="block-title">Дарим фильтр для бытовой техники!</h2>
-		<div class="content">
-			<button type="button" class="btn" data-toggle="modal" data-target="#modal-gift">
-				Дарим фильтр для бытовой техники!
-			</button>
-			<div class="modal fade" id="modal-gift" tabindex="-1" role="dialog">
-				<div class="modal-dialog modal-md header-img" role="document">
-					<div class="modal-content">
-
-						<div class="modal-header">
-							<button type="button" class="btn-close btn-close-gray" data-dismiss="modal"
-									aria-label="Close"><span aria-hidden="true"></span></button>
-							<div class="image"><img src="images/gift.jpg" alt="gift"></div>
-							<h4 class="modal-title modal-title-big">Дарим фильтр для бытовой техники!</h4>
-						</div>
-						<div class="modal-body">
-							<p>При покупке товаров на сумму 2300 грн вы получаете фильтр для бытовой техники бесплатно!</p>
-							<div class="text-orange">До конца акции:</div>
-							<div class="clock clock-big"></div>
-							<a href="#" class="underline-hover link-more">Подробнее об акции</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--modal gift end-->
-
-		<!--modal payment-in-installments-->
-		<h2 class="block-title">Оплата частями</h2>
-		<div class="content">
-			<button type="button" class="btn" data-toggle="modal" data-target="#modal-payment-in-installments">
-				Оплата частями
-			</button>
-			<div class="modal fade" id="modal-payment-in-installments" tabindex="-1" role="dialog">
-				<div class="modal-dialog modal-md-sm" role="document">
-					<div class="modal-content">
-
-						<div class="modal-header">
-							<button type="button" class="btn-close btn-close-gray" data-dismiss="modal"
-									aria-label="Close"><span aria-hidden="true"></span></button>
-							<h4 class="modal-title modal-title-big">Оплата частями</h4>
-						</div>
-						<div class="modal-body">
-							<div class="wrapper-blue visible-inline-block">
-								<strong>«Оплата частями»</strong> - это простой способ приобрести желаемый товар
-								в рассрочку, без комиссии и дополнительных платежей.
-							</div>
-							<ul class="list-unstyled list-unstyled-title">
-								<li><strong>Условия оплаты частями:</strong></li>
-								<li>— комиссия составляет 0%, услуга бесплатна;</li>
-								<li>— для оформления не нужно предоставлять паспорт, ИНН и любые другие документы;</li>
-								<li>— необходимо быть держателем карты ПриватБанка («Универсальная», «Универсальная gold», «Platinum», «Infinite», «World Signia/Elit»);</li>
-								<li>— услуга активируется мгновенно, в момент оплаты картой ПриватБанка.</li>
-							</ul>
-
-							<hr>
-
-							<!--product-->
-							<div class="product-middle row">
-								<div class="col-xs-3">
-									<div class="image">
-										<img src="images/product-1.jpg" alt="product 1" class="img-responsive">
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-9">
-									<div class="title"><strong>Mineral Plus Base 6 Фильтр обратного осмоса</strong></div>
-									<div class="row">
-										<div class="col-xs-12 col-sm-4">
-											<div class="price"><!--<span class="old-price">7 654;-</span>-->6 100 <span
-												class="currency">грн</span></div>
-										</div>
-										<div class="col-xs-12 col-sm-8 text-center">
-											<button class="btn" data-toggle="modal" data-target="#modal-cart">Оплатить частями</button>
-											<a href="javascript:void(0);" class="underline-dotted underline-dotted-black" data-toggle="modal" data-target="#modal-purchase-on-credit">Рассчитать
-												кредит</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!--product end-->
-
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--modal payment-in-installments end-->
-
-		<!--modal cart-->
-		<h2 class="block-title">Корзина</h2>
-		<div class="content">
-			<button type="button" class="btn" data-toggle="modal" data-target="#modal-cart">
-				Корзина
-			</button>
-			<div class="modal fade" id="modal-cart" tabindex="-1" role="dialog">
-				<div class="modal-dialog modal-xxlg" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="btn-close btn-close-gray" data-dismiss="modal"
-									aria-label="Close"><span aria-hidden="true"></span></button>
-						</div>
-						<div class="modal-body">
-							<div class="row">
-								<div class="col-xs-12 col-sm-9 w-71">
-									<a href="#" data-dismiss="modal" class="underline-hover fright">Продолжить покупки</a>
-									<h4 class="modal-title modal-title-big">Корзина</h4>
-									<div class="item clearfix">
-										<button class="btn-remove btn-remove-gray"></button>
-										<div class="image">
-											<img src="images/product-1.jpg" alt="product 1" class="img-responsive">
-										</div>
-										<div class="left">
-											<div class="title">Фильтр обратного осмоса Бриз Гарант</div>
-											<div class="country">Bluefilters (Германия)</div>
-											<div class="sku">Код 02002-98</div>
-										</div>
-										<div class="price"><span class="old-price">7 654;-</span>6 100 <span
-											class="currency">грн</span>
-										</div>
-										<div class="quantity">
-											<input type="number" min="1" max="999" step="1" value="1">
-										</div>
-									</div>
-									<div class="item clearfix">
-										<button class="btn-remove btn-remove-gray"></button>
-										<div class="image">
-											<img src="images/product-1.jpg" alt="product 1" class="img-responsive">
-										</div>
-										<div class="left">
-											<div class="title">Фильтр обратного осмоса Бриз Гарант</div>
-											<div class="country">Bluefilters (Германия)</div>
-											<div class="sku">Код 02002-98</div>
-										</div>
-										<div class="price">2 345 <span
-											class="currency">грн</span>
-										</div>
-										<div class="quantity">
-											<input type="number" min="1" max="999" step="1" value="5">
-										</div>
-									</div>
-									<div class="item clearfix">
-										<button class="btn-remove btn-remove-gray"></button>
-										<div class="image">
-											<img src="images/product-1.jpg" alt="product 1" class="img-responsive">
-										</div>
-										<div class="left">
-											<div class="title">Фильтр обратного осмоса Бриз Гарант</div>
-											<div class="country">Bluefilters (Германия)</div>
-											<div class="sku">Код 02002-98</div>
-										</div>
-										<div class="price">5 437 <span	class="currency">грн</span>	</div>
-										<div class="quantity">
-											<input type="number" min="1" max="999" step="1" value="1">
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-3 w-29">
-									<div class="wrapper-gray">
-										5 товаров на сумму
-										<div class="price total">13 882 <span class="currency">грн</span></div>
-										<div class="clearfix"></div>
-										<button type="button" class="btn w-100 btn-submit">Оформить заказ</button>
-
-										<div class="or"><span>или</span></div>
-
-										<div class="buy-in-1-click">Купить в 1 клик</div>
-
-										<form action="?" class="form-buy-in-1-click-tel">
-											<div class="form-group">
-												<input type="tel" placeholder="+380" class="form-control">
-												<div class="help-block">Введите номер телефона</div>
-												<div class="help-block help-block-gray">Пример +38(099)-999-99-99</div>
-											</div>
-
-											<button type="submit" class="btn btn-transparent w-100 btn-load">жду звонка</button>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--modal cart-->
-
-		<!--modal slider-->
-		<h2 class="block-title">Слайдер</h2>
-		<div class="content">
-			<button type="button" class="btn" data-toggle="modal" data-target="#modal-slider">
-				Слайдер
-			</button>
-			<div class="modal fade" id="modal-slider" tabindex="-1" role="dialog">
-				<div class="modal-dialog modal-xlg" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="btn-close btn-close-gray" data-dismiss="modal"
-									aria-label="Close"><span aria-hidden="true"></span></button>
-						</div>
-						<div class="modal-body">
-							<div class="slider-nav-vertical">
-								<div>
-									<img src="images/product-1-thumbnail.jpg" alt="1">
-								</div>
-								<div>
-									<img src="images/product-2-thumbnail.jpg" alt="1">
-								</div>
-								<div>
-									<img src="images/product-3-thumbnail.jpg" alt="1">
-								</div>
-								<div class="video">
-									<img src="images/product-4-thumbnail.jpg" alt="1">
-								</div>
-								<div class="d3">
-									<img src="images/product-1-thumbnail.jpg" alt="1">
-								</div>
-								<div>
-									<img src="images/product-2-thumbnail.jpg" alt="1">
-								</div>
-								<div>
-									<img src="images/product-3-thumbnail.jpg" alt="1">
-								</div>
-								<div>
-									<img src="images/product-4-thumbnail.jpg" alt="1">
-								</div>
-							</div>
-							<div class="slider-for-vertical">
-								<div>
-									<img src="images/product-1-big.jpg" alt="1" class="img-responsive">
-								</div>
-								<div>
-									<img src="images/product-2-big.jpg" alt="1" class="img-responsive">
-								</div>
-								<div>
-									<img src="images/product-3-big.jpg" alt="1" class="img-responsive">
-								</div>
-								<div class="video">
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/Gp1oBmbspLY?rel=0" frameborder="0" allowfullscreen></iframe>
-								</div>
-								<div class="d3">
-									<img src="images/product-1-big.jpg" alt="1" class="img-responsive">
-								</div>
-								<div>
-									<img src="images/product-2-big.jpg" alt="1" class="img-responsive">
-								</div>
-								<div>
-									<img src="images/product-3-big.jpg" alt="1" class="img-responsive">
-								</div>
-								<div>
-									<img src="images/product-4-big.jpg" alt="1" class="img-responsive">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--modal slider-->
-
-	</div>
-
-</main>
+<?php include('header.html') ?>
+
+<main id="popups">
+
+
+
+	<div class="container">
+
+		<h1 class="page-title">Popups</h1>
+
+
+
+		<!--modal buy-in-1-click-->
+
+		<h2 class="block-title">Купить в 1 клик</h2>
+
+		<div class="content">
+
+			<button type="button" class="btn" data-toggle="modal" data-target="#modal-buy-in-1-click">
+
+				Купить в 1 клик
+
+			</button>
+
+			<div class="modal fade" id="modal-buy-in-1-click" tabindex="-1" role="dialog">
+
+				<div class="modal-dialog modal-xs" role="document">
+
+					<div class="modal-content">
+
+						<form action="buy-in-1-click" class="form-buy-in-1-click">
+
+							<div class="modal-header">
+
+								<button type="button" class="btn-close btn-close-gray" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+
+								<h4 class="modal-title">Укажите номер телефона, мы свяжемся <br> с вами в течении 30 секунд</h4>
+
+							</div>
+
+							<div class="modal-body">
+
+								<div class="form-group">
+
+									<input type="text" class="form-control" placeholder="Ваше имя">
+
+									<div class="help-block">Введите Ваше имя</div>
+
+								</div>
+
+								<div class="form-group">
+
+									<input type="tel" placeholder="+380" class="form-control">
+
+									<div class="help-block">Введите правильный номер телефона</div>
+
+									<div class="help-block help-block-gray">Пример +38(099)-999-99-99</div>
+
+								</div>
+
+								<div class="text-center"><button type="submit" class="btn btn-submit btn-load">Отправить</button></div>
+
+							</div>
+
+						</form>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--modal buy-in-1-click end-->
+
+
+
+		<!--modal success-->
+
+		<h2 class="block-title">Спасибо</h2>
+
+		<div class="content">
+
+			<button type="button" class="btn" data-toggle="modal" data-target="#modal-success">
+
+				Спасибо
+
+			</button>
+
+			<div class="modal fade" id="modal-success" tabindex="-1" role="dialog">
+
+				<div class="modal-dialog modal-xs" role="document">
+
+					<div class="modal-content">
+
+						<div class="valign-middle">
+
+							<div class="modal-header">
+
+								<button type="button" class="btn-close btn-close-gray" data-dismiss="modal"	aria-label="Close"><span aria-hidden="true"></span></button>
+
+								<h4 class="modal-title">Спасибо!</h4>
+
+							</div>
+
+							<div class="modal-body text-center">
+
+								Ожидайте звонок от нашего <br>
+
+								консультанта
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--modal success end-->
+
+
+
+		<!--modal cheaper-->
+
+		<h2 class="block-title">Дешевле? Можно!</h2>
+
+		<div class="content">
+
+			<button type="button" class="btn" data-toggle="modal" data-target="#modal-cheaper">
+
+				Дешевле? Можно!
+
+			</button>
+
+			<div class="modal fade" id="modal-cheaper" tabindex="-1" role="dialog">
+
+				<div class="modal-dialog modal-sm" role="document">
+
+					<div class="modal-content">
+
+						<form action="cheaper" class="form-cheaper">
+
+							<div class="modal-header">
+
+								<button type="button" class="btn-close btn-close-gray" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+
+								<h4 class="modal-title">Дешевле? Можно!</h4>
+
+							</div>
+
+							<div class="modal-body">
+
+								<p>Мы следим за рынком и стараемся предложить лучшую цену. <br>
+
+									Но мы всегда рады обсудить её с покупателем! <br>
+
+									Уверены, что сможем договориться ;)</p>
+
+								<p>Оставьте номер телефона и наш менеджер перезвонит Вам.</p>
+
+								<div class="form-group">
+
+									<input type="text" class="form-control" placeholder="Ваше имя">
+
+									<div class="help-block">Введите Ваше имя</div>
+
+								</div>
+
+								<p>Вставьте ссылку на сайт, где вы нашли <strong>Mineral Plus Base 6 Фильтр обратного осмоса</strong>  дешевле</p>
+
+								<div class="form-group">
+
+									<input type="tel" placeholder="+380" class="form-control">
+
+									<div class="help-block">Введите правильный номер телефона</div>
+
+									<div class="help-block help-block-gray">Пример +38(099)-999-99-99</div>
+
+								</div>
+
+								<div class="text-center"><button type="submit" class="btn btn-submit btn-load">Отправить</button></div>
+
+							</div>
+
+						</form>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--modal cheaper end-->
+
+
+
+		<!--modal purchase-on-credit-->
+
+		<h2 class="block-title">Покупка товара в кредит</h2>
+
+		<div class="content">
+
+			<button type="button" class="btn" data-toggle="modal" data-target="#modal-purchase-on-credit">
+
+				Покупка товара в кредит
+
+			</button>
+
+			<div class="modal fade" id="modal-purchase-on-credit" tabindex="-1" role="dialog">
+
+				<div class="modal-dialog modal-md" role="document">
+
+					<div class="modal-content">
+
+						<form action="cheaper" class="form-cheaper">
+
+							<div class="modal-header">
+
+								<button type="button" class="btn-close btn-close-gray" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+
+								<h4 class="modal-title modal-title-big">Покупка товара в кредит</h4>
+
+							</div>
+
+							<div class="modal-body">
+
+								<p>Для оформления кредита необходимо нажать кнопку «Купить», перейти к оформлению заказа, либо продолжить покупки и добавить дополнительный товар в «Корзину». </p>
+
+								<p>В момент подтверждения заказа по телефону, сообщить менеджеру Ваши ФИО, номер заказа, телефон и желание оформить товар в кредит с указанием желаемого срока 9, 12, 24, 36 месяцев. </p>
+
+								<ul class="list-unstyled list-unstyled-title">
+
+									<li><strong>Условия кредитования:</strong></li>
+
+									<li>— Кредит оформляется на безналичную стоимость товара грн.</li>
+
+									<li>— Минимальный взнос 10% - 519 грн.</li>
+
+									<li>— Единоразовая комиссия 1,5% - 78 грн.</li>
+
+									<li>— Ежемесячно 1,5% - 78 грн.</li>
+
+								</ul>
+
+								<div class="credit-tariff">
+
+									<div class="row">
+
+										<div class="col-xs-12 col-sm-3">
+
+											<div class="title">кредит “9”</div>
+
+											<div class="content">9 платежей по</div>
+
+											<div class="price">597 <span class="currency">грн</span></div>
+
+											<button class="btn btn-buy">Купить</button>
+
+										</div>
+
+										<div class="col-xs-12 col-sm-3">
+
+											<div class="title">кредит “12”</div>
+
+											<div class="content">12 платежей по</div>
+
+											<div class="price">466 <span class="currency">грн</span></div>
+
+											<button class="btn btn-buy">Купить</button>
+
+										</div>
+
+										<div class="col-xs-12 col-sm-3">
+
+											<div class="title">кредит “24”</div>
+
+											<div class="content">24 платежей по</div>
+
+											<div class="price">268 <span class="currency">грн</span></div>
+
+											<button class="btn btn-buy">Купить</button>
+
+										</div>
+
+										<div class="col-xs-12 col-sm-3">
+
+											<div class="title">кредит “36”</div>
+
+											<div class="content">36 платежей по</div>
+
+											<div class="price">203 <span class="currency">грн</span></div>
+
+											<button class="btn btn-buy">Купить</button>
+
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class="text-orange">Оформление кредита возможно по всей Украине!</div>
+
+							</div>
+
+						</form>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--modal purchase-on-credit end-->
+
+
+
+		<!--modal ways-of-delivery-->
+
+		<h2 class="block-title">Способы доставки</h2>
+
+		<div class="content">
+
+			<button type="button" class="btn" data-toggle="modal" data-target="#modal-ways-of-delivery">
+
+				Способы доставки
+
+			</button>
+
+			<div class="modal fade" id="modal-ways-of-delivery" tabindex="-1" role="dialog">
+
+				<div class="modal-dialog modal-lg" role="document">
+
+					<div class="modal-content">
+
+
+
+						<div class="modal-header">
+
+							<button type="button" class="btn-close btn-close-gray" data-dismiss="modal"
+
+									aria-label="Close"><span aria-hidden="true"></span></button>
+
+							<h4 class="modal-title modal-title-big">Способы доставки</h4>
+
+						</div>
+
+						<div class="modal-body">
+
+							<div class="wrapper-blue visible-inline-block">
+
+								Доставка всех <span class="text-blue">кувшинов</span>, <span class="text-blue">сменных элементов</span>,
+
+								и <span class="text-blue">комплектующих</span>
+
+								<br>
+
+								по Киеву и регионам стоимостью свыше 200 грн составляет 40 грн
+
+							</div>
+
+
+
+							<div style="height: 23px"></div>
+
+							<div class="item-left-right clearfix">
+
+								<div class="left">
+
+									<img src="images/marker.png" alt="marker">
+
+								</div>
+
+								<div class="right">
+
+									<div class="title">Самовывоз в Киеве</div>
+
+									<div class="content text-gray">
+
+										<p>Вы можете самостоятельно забрать свой заказ из офиса нашей компании <br>
+
+										в любой рабочий день, предварительно согласовав наличие продукции на складе.</p>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="item-left-right clearfix">
+
+								<div class="left">
+
+									<img src="images/box.png" alt="box">
+
+								</div>
+
+								<div class="right">
+
+									<div class="title">Курьером по Киеву</div>
+
+									<div class="content text-gray">
+
+										<p>Курьер нашей компании доставит Ваш заказ в обозначенное время.</p>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="item-left-right clearfix">
+
+								<div class="left">
+
+									<img src="images/car.png" alt="car">
+
+								</div>
+
+								<div class="right">
+
+									<div class="title">Курьерские службы по Украине</div>
+
+									<div class="content text-gray">
+
+										<p>Мы можем предложить Вам воспользоваться услугами курьерских служб: <br>
+
+										Новая почта, Ин-Тайм,  Автолюкс, Гюнсел и др.</p>
+
+									</div>
+
+								</div>
+
+							</div>
+
+
+
+							<div style="height: 17px"></div>
+
+
+
+							<div class="wrapper-blue visible-inline-block">
+
+								Доставка и монтаж системы производятся <strong>в один и тот же день</strong>, что удобно <br>
+
+								и выгодно - Вы сразу сможете наслаждаться чистой водой.
+
+							</div>
+
+
+
+							<div class="text-orange">*Доставка распространяется по всей Украине, где действует покрытие почтовых служб.</div>
+
+							<p><br></p>
+
+							<p class="text-center"><strong>Мы открыты к Вашим предложениям и готовы <br>
+
+								рассмотреть другие варианты.</strong></p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--modal ways-of-delivery end-->
+
+
+
+		<!--modal payment-methods-->
+
+		<h2 class="block-title">Способы оплаты</h2>
+
+		<div class="content">
+
+			<button type="button" class="btn" data-toggle="modal" data-target="#modal-payment-methods">
+
+				Cпособы оплаты
+
+			</button>
+
+			<div class="modal fade" id="modal-payment-methods" tabindex="-1" role="dialog">
+
+				<div class="modal-dialog modal-md" role="document">
+
+					<div class="modal-content">
+
+
+
+						<div class="modal-header">
+
+							<button type="button" class="btn-close btn-close-gray" data-dismiss="modal"
+
+									aria-label="Close"><span aria-hidden="true"></span></button>
+
+							<h4 class="modal-title modal-title-big">Способы оплаты</h4>
+
+						</div>
+
+						<div class="modal-body">
+
+
+
+							<div class="item-left-right clearfix">
+
+								<div class="left">
+
+									<img src="images/purse.png" alt="marker">
+
+								</div>
+
+								<div class="right">
+
+									<div class="title">Наличными курьеру</div>
+
+									<div class="content text-gray">
+
+										<p>Вы можете оплатить наличными курьеру при доставке <br>
+
+											или монтаже приобретенной системы очистки воды.</p>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="item-left-right clearfix">
+
+								<div class="left">
+
+									<img src="images/payment-to-the-card-account.png" alt="box">
+
+								</div>
+
+								<div class="right">
+
+									<div class="title">Оплата на карточный счет</div>
+
+									<div class="content text-gray">
+
+										<p>Осуществляется в банковском отделении через кассу или <br>
+
+											с помощью онлайн-банкинга. Реквизиты подскажут наши менеджеры.</p>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="item-left-right clearfix">
+
+								<div class="left">
+
+									<img src="images/transfer-to-company-account.png" alt="car">
+
+								</div>
+
+								<div class="right">
+
+									<div class="title">Перевод на счет компании</div>
+
+									<div class="content text-gray">
+
+										<p>Перевод денежных средств на банковский счет компании. <br>
+
+											Реквизиты подскажут наши менеджеры.</p>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="item-left-right clearfix">
+
+								<div class="left">
+
+									<img src="images/other-payment-methods.png" alt="car">
+
+								</div>
+
+								<div class="right">
+
+									<div class="title">Другие способы оплаты</div>
+
+									<div class="content text-gray">
+
+										<p>Через платежные методы PayU (Visa/MasterCard/Eurocard; <br>
+
+											терминалы: ПриватБанка, Ibox; Приват24;)</p>
+
+									</div>
+
+								</div>
+
+							</div>
+
+
+
+							<div class="wrapper-blue visible-inline-block">
+
+								При заказе системы очистки в регион и отказе от монтажа подмоечных питьевых систем, вы получаете <strong>скидку 150 грн</strong> на проточный фильтр <br>
+
+								и <strong>200 грн</strong> на фильтр обратного осмоса.
+
+							</div>
+
+
+
+							<p><br></p>
+
+							<p class="text-center"><strong>Во всех вопросах мы всегда идем навстречу нашим клиентам. <br>
+
+								Позвоните прямо сейчас и мы обязательно обсудим Ваши предложения.</strong></p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--modal payment-methods end-->
+
+
+
+		<!--modal gift-->
+
+		<h2 class="block-title">Дарим фильтр для бытовой техники!</h2>
+
+		<div class="content">
+
+			<button type="button" class="btn" data-toggle="modal" data-target="#modal-gift">
+
+				Дарим фильтр для бытовой техники!
+
+			</button>
+
+			<div class="modal fade" id="modal-gift" tabindex="-1" role="dialog">
+
+				<div class="modal-dialog modal-md header-img" role="document">
+
+					<div class="modal-content">
+
+
+
+						<div class="modal-header">
+
+							<button type="button" class="btn-close btn-close-gray" data-dismiss="modal"
+
+									aria-label="Close"><span aria-hidden="true"></span></button>
+
+							<div class="image"><img src="images/gift.jpg" alt="gift"></div>
+
+							<h4 class="modal-title modal-title-big">Дарим фильтр для бытовой техники!</h4>
+
+						</div>
+
+						<div class="modal-body">
+
+							<p>При покупке товаров на сумму 2300 грн вы получаете фильтр для бытовой техники бесплатно!</p>
+
+							<div class="text-orange">До конца акции:</div>
+
+							<div class="clock clock-big"></div>
+
+							<a href="#" class="underline-hover link-more">Подробнее об акции</a>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--modal gift end-->
+
+
+
+		<!--modal payment-in-installments-->
+
+		<h2 class="block-title">Оплата частями</h2>
+
+		<div class="content">
+
+			<button type="button" class="btn" data-toggle="modal" data-target="#modal-payment-in-installments">
+
+				Оплата частями
+
+			</button>
+
+			<div class="modal fade" id="modal-payment-in-installments" tabindex="-1" role="dialog">
+
+				<div class="modal-dialog modal-md-sm" role="document">
+
+					<div class="modal-content">
+
+
+
+						<div class="modal-header">
+
+							<button type="button" class="btn-close btn-close-gray" data-dismiss="modal"
+
+									aria-label="Close"><span aria-hidden="true"></span></button>
+
+							<h4 class="modal-title modal-title-big">Оплата частями</h4>
+
+						</div>
+
+						<div class="modal-body">
+
+							<div class="wrapper-blue visible-inline-block">
+
+								<strong>«Оплата частями»</strong> - это простой способ приобрести желаемый товар
+
+								в рассрочку, без комиссии и дополнительных платежей.
+
+							</div>
+
+							<ul class="list-unstyled list-unstyled-title">
+
+								<li><strong>Условия оплаты частями:</strong></li>
+
+								<li>— комиссия составляет 0%, услуга бесплатна;</li>
+
+								<li>— для оформления не нужно предоставлять паспорт, ИНН и любые другие документы;</li>
+
+								<li>— необходимо быть держателем карты ПриватБанка («Универсальная», «Универсальная gold», «Platinum», «Infinite», «World Signia/Elit»);</li>
+
+								<li>— услуга активируется мгновенно, в момент оплаты картой ПриватБанка.</li>
+
+							</ul>
+
+
+
+							<hr>
+
+
+
+							<!--product-->
+
+							<div class="product-middle row">
+
+								<div class="col-xs-3">
+
+									<div class="image">
+
+										<img src="images/product-1.jpg" alt="product 1" class="img-responsive">
+
+									</div>
+
+								</div>
+
+								<div class="col-xs-12 col-sm-9">
+
+									<div class="title"><strong>Mineral Plus Base 6 Фильтр обратного осмоса</strong></div>
+
+									<div class="row">
+
+										<div class="col-xs-12 col-sm-4">
+
+											<div class="price"><!--<span class="old-price">7 654;-</span>-->6 100 <span
+
+												class="currency">грн</span></div>
+
+										</div>
+
+										<div class="col-xs-12 col-sm-8 text-center">
+
+											<button class="btn" data-toggle="modal" data-target="#modal-cart">Оплатить частями</button>
+
+											<a href="javascript:void(0);" class="underline-dotted underline-dotted-black" data-toggle="modal" data-target="#modal-purchase-on-credit">Рассчитать
+
+												кредит</a>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<!--product end-->
+
+
+
+
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--modal payment-in-installments end-->
+
+
+
+		<!--modal cart-->
+
+		<h2 class="block-title">Корзина</h2>
+
+		<div class="content">
+
+			<button type="button" class="btn" data-toggle="modal" data-target="#modal-cart">
+
+				Корзина
+
+			</button>
+
+			<div class="modal fade" id="modal-cart" tabindex="-1" role="dialog">
+
+				<div class="modal-dialog modal-xxlg" role="document">
+
+					<div class="modal-content">
+
+						<div class="modal-header">
+
+							<button type="button" class="btn-close btn-close-gray" data-dismiss="modal"
+
+									aria-label="Close"><span aria-hidden="true"></span></button>
+
+						</div>
+
+						<div class="modal-body">
+
+							<div class="row">
+
+								<div class="col-xs-12 col-sm-9 w-71">
+
+									<a href="#" data-dismiss="modal" class="underline-hover fright">Продолжить покупки</a>
+
+									<h4 class="modal-title modal-title-big">Корзина</h4>
+
+									<div class="item clearfix">
+
+										<button class="btn-remove btn-remove-gray"></button>
+
+										<div class="image">
+
+											<img src="images/product-1.jpg" alt="product 1" class="img-responsive">
+
+										</div>
+
+										<div class="left">
+
+											<div class="title">Фильтр обратного осмоса Бриз Гарант</div>
+
+											<div class="country">Bluefilters (Германия)</div>
+
+											<div class="sku">Код 02002-98</div>
+
+										</div>
+
+										<div class="price"><span class="old-price">7 654;-</span>6 100 <span
+
+											class="currency">грн</span>
+
+										</div>
+
+										<div class="quantity">
+
+											<input type="number" min="1" max="999" step="1" value="1">
+
+										</div>
+
+									</div>
+
+									<div class="item clearfix">
+
+										<button class="btn-remove btn-remove-gray"></button>
+
+										<div class="image">
+
+											<img src="images/product-1.jpg" alt="product 1" class="img-responsive">
+
+										</div>
+
+										<div class="left">
+
+											<div class="title">Фильтр обратного осмоса Бриз Гарант</div>
+
+											<div class="country">Bluefilters (Германия)</div>
+
+											<div class="sku">Код 02002-98</div>
+
+										</div>
+
+										<div class="price">2 345 <span
+
+											class="currency">грн</span>
+
+										</div>
+
+										<div class="quantity">
+
+											<input type="number" min="1" max="999" step="1" value="5">
+
+										</div>
+
+									</div>
+
+									<div class="item clearfix">
+
+										<button class="btn-remove btn-remove-gray"></button>
+
+										<div class="image">
+
+											<img src="images/product-1.jpg" alt="product 1" class="img-responsive">
+
+										</div>
+
+										<div class="left">
+
+											<div class="title">Фильтр обратного осмоса Бриз Гарант</div>
+
+											<div class="country">Bluefilters (Германия)</div>
+
+											<div class="sku">Код 02002-98</div>
+
+										</div>
+
+										<div class="price">5 437 <span	class="currency">грн</span>	</div>
+
+										<div class="quantity">
+
+											<input type="number" min="1" max="999" step="1" value="1">
+
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class="col-xs-12 col-sm-3 w-29">
+
+									<div class="wrapper-gray">
+
+										5 товаров на сумму
+
+										<div class="price total">13 882 <span class="currency">грн</span></div>
+
+										<div class="clearfix"></div>
+
+										<button type="button" class="btn w-100 btn-submit">Оформить заказ</button>
+
+
+
+										<div class="or"><span>или</span></div>
+
+
+
+										<div class="buy-in-1-click">Купить в 1 клик</div>
+
+
+
+										<form action="?" class="form-buy-in-1-click-tel">
+
+											<div class="form-group">
+
+												<input type="tel" placeholder="+380" class="form-control">
+
+												<div class="help-block">Введите номер телефона</div>
+
+												<div class="help-block help-block-gray">Пример +38(099)-999-99-99</div>
+
+											</div>
+
+
+
+											<button type="submit" class="btn btn-transparent w-100 btn-load">жду звонка</button>
+
+										</form>
+
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--modal cart-->
+
+
+
+		<!--modal slider-->
+
+		<h2 class="block-title">Слайдер</h2>
+
+		<div class="content">
+
+			<button type="button" class="btn" data-toggle="modal" data-target="#modal-slider">
+
+				Слайдер
+
+			</button>
+
+			<div class="modal fade" id="modal-slider" tabindex="-1" role="dialog">
+
+				<div class="modal-dialog modal-xlg" role="document">
+
+					<div class="modal-content">
+
+						<div class="modal-header">
+
+							<button type="button" class="btn-close btn-close-gray" data-dismiss="modal"
+
+									aria-label="Close"><span aria-hidden="true"></span></button>
+
+						</div>
+
+						<div class="modal-body">
+
+							<div class="slider-nav-vertical">
+
+								<div>
+
+									<img src="images/product-1-thumbnail.jpg" alt="1">
+
+								</div>
+
+								<div>
+
+									<img src="images/product-2-thumbnail.jpg" alt="1">
+
+								</div>
+
+								<div>
+
+									<img src="images/product-3-thumbnail.jpg" alt="1">
+
+								</div>
+
+								<div class="video">
+
+									<img src="images/product-4-thumbnail.jpg" alt="1">
+
+								</div>
+
+								<div class="d3">
+
+									<img src="images/product-1-thumbnail.jpg" alt="1">
+
+								</div>
+
+								<div>
+
+									<img src="images/product-2-thumbnail.jpg" alt="1">
+
+								</div>
+
+								<div>
+
+									<img src="images/product-3-thumbnail.jpg" alt="1">
+
+								</div>
+
+								<div>
+
+									<img src="images/product-4-thumbnail.jpg" alt="1">
+
+								</div>
+
+							</div>
+
+							<div class="slider-for-vertical">
+
+								<div>
+
+									<img src="images/product-1-big.jpg" alt="1" class="img-responsive">
+
+								</div>
+
+								<div>
+
+									<img src="images/product-2-big.jpg" alt="1" class="img-responsive">
+
+								</div>
+
+								<div>
+
+									<img src="images/product-3-big.jpg" alt="1" class="img-responsive">
+
+								</div>
+
+								<div class="video">
+
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/Gp1oBmbspLY?rel=0" frameborder="0" allowfullscreen></iframe>
+
+								</div>
+
+								<div class="d3">
+
+									<img src="images/product-1-big.jpg" alt="1" class="img-responsive">
+
+								</div>
+
+								<div>
+
+									<img src="images/product-2-big.jpg" alt="1" class="img-responsive">
+
+								</div>
+
+								<div>
+
+									<img src="images/product-3-big.jpg" alt="1" class="img-responsive">
+
+								</div>
+
+								<div>
+
+									<img src="images/product-4-big.jpg" alt="1" class="img-responsive">
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--modal slider-->
+
+
+
+
+
+
+
+		<!--modal checkout-->
+
+		<h2 class="block-title">Оформление заказа</h2>
+
+		<div class="content">
+
+			<button type="button" class="btn" data-toggle="modal" data-target="#modal-checkout">
+
+				Оформление заказа
+
+			</button>
+
+			<div class="modal fade" id="modal-checkout" tabindex="-1" role="dialog">
+
+				<div class="modal-dialog modal-1260" role="document">
+
+					<div class="modal-content modal-checkout">
+
+						<div class="modal-header">
+
+							<button type="button" class="btn-close btn-close-gray" data-dismiss="modal"
+
+									aria-label="Close"><span aria-hidden="true"></span></button>
+
+						</div>
+
+						<div class="modal-body">
+
+							<div class="row">
+
+								<div class="col-xs-12 col-sm-9 left-col">
+
+									<div class="form-block">
+										<h4 class="modal-title modal-title-big">Оформление заказа</h4>
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Ваше имя">
+											<div class="help-block">Введите Ваше имя</div>
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Телефон">
+											<div class="help-block">Введите Ваш телефон</div>
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Электронная почта">
+											<div class="help-block">Введите Вашу электронную почту</div>
+										</div>
+									</div>
+
+									<div class="form-block">
+										<h4 class="modal-title modal-title-big">
+											Доставка
+											<label class="checkbox">
+												<input type="checkbox" checked="">
+												<span class="checkbox-text">Нужен монтаж</span>
+											</label>
+										</h4>
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Населенный пункт">
+											<div class="help-block">Введите Ваше населеный пункт</div>
+										</div>
+										<div class="form-group">
+											<textarea placeholder="Адрес доставки"></textarea>
+											<div class="help-block">Введите Ваш адрес доставки</div>
+										</div>
+									</div>
+
+									<div class="form-block">
+										<h4 class="modal-title modal-title-big">Оплата</h4>
+										<div class="radio-group">
+											<label class="radio">
+												<input type="radio" name="payment_type">
+												<span class="radio-text">Наличными  курьеру</span>
+											</label>
+											<label class="radio">
+												<input type="radio" name="payment_type" checked="">
+												<span class="radio-text">Оплатить онлайн</span>
+											</label>
+											<label class="radio">
+												<input type="radio" name="payment_type">
+												<span class="radio-text">Другой вариант (юр. лицам)</span>
+											</label>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="col-xs-12 col-sm-3 right-col">
+									
+									<div class="checkout-cart-block">
+
+										<div class="items">
+											<div class="item clearfix">
+												<div class="image">
+													<a href="#"><img src="https://dummyimage.com/600x400/cccacc/fff" alt=""></a>
+												</div>
+												<div class="info">
+													<div class="product-title"><a href="#">Фильтр обратного осмоса Бриз Гарант</a></div>
+													<div class="brand">Bluefilters (Геермания)</div>
+													<div class="code">Код 02002-98</div>
+												</div>
+												<div class="amount">1 шт.</div>
+												<div class="price">6 100 <span>грн</span></div>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--modal checkout-->
+
+
+
+
+
+
+
+
+	</div>
+
+
+
+</main>
+
 <?php include('footer.html') ?>
