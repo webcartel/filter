@@ -4998,6 +4998,54 @@ footer {
     bottom: 0;
     right: 0; }
 
+@media screen and (max-width: 1050px) {
+  .replacement_filters .items {
+    display: flex;
+    flex-wrap: wrap; }
+    .replacement_filters .items .col-sm-4:nth-child(1) {
+      flex: 1 1 50%;
+      padding: 0 7.5px 0 15px;
+      margin-bottom: 15px; }
+      .replacement_filters .items .col-sm-4:nth-child(1) .item-1 {
+        border-radius: 0; }
+    .replacement_filters .items .col-sm-4:nth-child(2) {
+      flex: 1 1 50%;
+      padding: 0 15px 0 7.5px; }
+    .replacement_filters .items .col-sm-4:nth-child(3) {
+      display: flex;
+      width: 100%;
+      padding: 0 15px 0 2px; }
+      .replacement_filters .items .col-sm-4:nth-child(3) .row {
+        flex: 1 1 calc(50% - 15px);
+        margin: 0; }
+        .replacement_filters .items .col-sm-4:nth-child(3) .row .col-xs-12 {
+          padding: 0 0 0 13px; }
+        .replacement_filters .items .col-sm-4:nth-child(3) .row:nth-child(1) .col-xs-12 {
+          padding: 0 1px 0 13px; }
+          .replacement_filters .items .col-sm-4:nth-child(3) .row:nth-child(1) .col-xs-12 .item {
+            border-radius: 0 0 0 20px; }
+        .replacement_filters .items .col-sm-4:nth-child(3) .row:nth-child(2) .col-xs-12 {
+          padding: 0 0 0 14px; } }
+
+@media screen and (max-width: 991px) {
+  .replacement_filters .items .col-sm-4:nth-child(1) {
+    padding: 0 5px 0 10px;
+    margin-bottom: 10px; }
+    .replacement_filters .items .col-sm-4:nth-child(1) .item-1 {
+      margin-bottom: 0 !important; }
+  .replacement_filters .items .col-sm-4:nth-child(2) {
+    padding: 0 10px 0 5px;
+    margin-bottom: 10px; }
+    .replacement_filters .items .col-sm-4:nth-child(2) .item-2 {
+      margin-bottom: 0;
+      border-radius: 0 !important; }
+  .replacement_filters .items .col-sm-4:nth-child(3) {
+    padding: 0 10px 0 2px; }
+    .replacement_filters .items .col-sm-4:nth-child(3) .row:nth-child(1) .col-xs-12 {
+      padding: 0 1px 0 9px; }
+    .replacement_filters .items .col-sm-4:nth-child(3) .row:nth-child(2) .col-xs-12 {
+      padding: 0 0 0 9px; } }
+
 .tabs-block-wrap {
   margin-bottom: 40px; }
   .tabs-block-wrap .page-title {
