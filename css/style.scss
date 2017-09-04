@@ -6445,6 +6445,14 @@ footer{
 	.items {
 		// margin-top: 85px;
 		margin-top: -4px;
+		margin-bottom: 70px;
+
+		@media screen and (max-width: 1050px) {
+			margin-bottom: 40px;
+		}
+		@media screen and (max-width: 991px) {
+			margin-bottom: 0px;
+		}
 
 		.col-sm-4 {
 			@media screen and (max-width: 991px) {
@@ -7140,6 +7148,7 @@ footer{
 
 	@media screen and (max-width: 991px) and (min-width: 767px) {
 		flex-direction: column !important;
+		margin-bottom: 25px;
 	}
 
 	.text {

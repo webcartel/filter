@@ -4909,7 +4909,14 @@ footer {
     padding-right: 15px; }
 
 .replacement_filters .items {
-  margin-top: -4px; }
+  margin-top: -4px;
+  margin-bottom: 70px; }
+  @media screen and (max-width: 1050px) {
+    .replacement_filters .items {
+      margin-bottom: 40px; } }
+  @media screen and (max-width: 991px) {
+    .replacement_filters .items {
+      margin-bottom: 0px; } }
   @media screen and (max-width: 991px) {
     .replacement_filters .items .col-sm-4 {
       margin-bottom: 20px;
@@ -5381,7 +5388,8 @@ footer {
   align-items: center; }
   @media screen and (max-width: 991px) and (min-width: 767px) {
     .phone_send_form_1 {
-      flex-direction: column !important; } }
+      flex-direction: column !important;
+      margin-bottom: 25px; } }
   .phone_send_form_1 .text {
     margin-right: 50px;
     color: #5189ff; }
