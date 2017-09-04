@@ -2690,7 +2690,8 @@ hr{
 		padding-left: 0;
 	}
 	.more{
-		top: -4px;
+		// top: -4px;
+		top: 25px;
 	}
 	.pagination{
 		margin: 15px 0;
@@ -6731,6 +6732,44 @@ footer{
 			display: flex;
 			margin-bottom: 21px;
 			height: 383px;
+
+			@media screen and (max-width: 1050px) {
+				flex-wrap: wrap;
+				margin-bottom: 0 !important;
+				height: auto !important;
+
+				.col {
+					// margin-right: 0 !important;
+					&:nth-child(1) {
+						flex: 1 1 calc(50% - 5px);
+						margin-right: 5px !important;
+						margin-bottom: 10px;
+						height: 383px;
+					}
+					&:nth-child(2) {
+						flex: 1 1 calc(50% - 5px);
+						margin-right: 0 !important;
+						margin-left: 5px !important;
+						height: 383px;
+					}
+					&:nth-child(3) {
+						flex: 1 1 100%;
+						display: flex;
+						flex-direction: row !important;
+
+						.row-2 {
+							flex: 1 1 calc(50% - 5px);
+							margin-bottom: 10px;
+							&:nth-child(1) {
+								margin-right: 5px;
+							}
+							&:nth-child(2) {
+								margin-left: 5px;
+							}
+						}
+					}
+				}
+			}
 		}
 
 		.row-2 {
@@ -6738,13 +6777,37 @@ footer{
 			margin-bottom: 21px;
 			height: 181px;
 
+			@media screen and (max-width: 1050px) {
+				margin-bottom: 10px !important;
+
+				.col {
+					margin-right: 10px !important;
+
+					&:last-child {
+						margin-right: 0 !important;
+					}
+				}
+			}
+
+			@media screen and (max-width: 991px) {
+				.col {
+					&:nth-child(1) {
+						.item.clr-3 {
+							img {
+								max-width: 90px !important;
+							}
+						}
+					}
+				}
+			}
+
 			&:last-child {
 				margin-bottom: 0;
 			}
 		}
 
 		.col {
-			flex: 1px;
+			flex: 1;
 			margin-right: 21px;
 			width: calc(100% / 3 - 21px);
 			height: 100%;
@@ -6765,6 +6828,10 @@ footer{
 			height: 100%;
 			text-decoration: none;
 			overflow: hidden;
+
+			@media screen and (max-width: 991px) {
+				padding: 15px 0 0 20px;
+			}
 
 			img {
 				position: absolute;
@@ -6808,8 +6875,13 @@ footer{
 				display: block;
 				font: 400 22px/24px "Exo 2", sans-serif;
 				color: #3b3d41;
+
 				@media screen and (max-width: 1200px) {
-					text-shadow: 1px 1px 1px white;
+					// text-shadow: 1px 1px 1px #fff;
+				}
+
+				@media screen and (max-width: 911px) {
+					font-size: 19px;
 				}
 
 				.info_icon {
@@ -6830,7 +6902,12 @@ footer{
 				font: 400 18px/21px "PT sans", sans-serif;
 				color: #3b3d41;
 				@media screen and (max-width: 1200px) {
-					text-shadow: 1px 1px 1px white;
+					// text-shadow: 1px 1px 1px #fff;
+				}
+
+				@media screen and (max-width: 991px) {
+					margin-top: 5px;
+					font-size: 16px;
 				}
 			}
 
@@ -6850,7 +6927,7 @@ footer{
 						border-bottom: 1px solid #3b3d41 + 50;
 						transition: border-bottom-color 0.3s;
 						@media screen and (max-width: 1200px) {
-							text-shadow: 1px 1px 1px #fff;
+							// text-shadow: 1px 1px 1px #fff;
 						}
 						&:hover {
 							border-bottom-color: transparent;
@@ -7589,10 +7666,10 @@ footer{
 
 	// checkout-cart-block
 	.checkout-cart-block {
-		padding: 0 47px 0 33px;
+		padding: 0 47px 70px 33px;
 
 		@media screen and (max-width: 992px) {
-			padding: 0 33px 0 33px !important;
+			padding: 0 33px 70px 33px !important;
 		}
 
 		.items {
