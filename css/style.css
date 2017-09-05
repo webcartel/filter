@@ -5972,3 +5972,246 @@ footer {
     max-width: 90%;
     font: 400 12px/25px Arial,sans-serif;
     color: #9ba2ac; }
+
+.service-single .head {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 55px;
+  padding-left: 50px;
+  height: 240px;
+  border-radius: 30px; }
+  .service-single .head .title {
+    font: 700 30px "Exo 2", sans-serif;
+    color: #5189ff;
+    text-transform: uppercase; }
+
+.service-single .side-nav ul, .service-single .side-nav li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+@media screen and (max-width: 991px) {
+  .service-single .side-nav ul {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; } }
+
+@media screen and (max-width: 991px) {
+  .service-single .side-nav li {
+    margin-right: 20px !important; }
+    .service-single .side-nav li:last-child {
+      margin-right: 0 !important; } }
+
+.service-single .side-nav .title {
+  display: block;
+  color: #3b3d41; }
+
+.service-single .side-nav .order-btn {
+  display: block;
+  margin-top: 30px;
+  padding: 15px;
+  font: 500 14px/1.1 "Exo 2", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #5189ff;
+  border-radius: 25px; }
+  @media screen and (max-width: 991px) {
+    .service-single .side-nav .order-btn {
+      margin: 0 !important; } }
+  .service-single .side-nav .order-btn:hover {
+    background-color: #3d75eb; }
+
+.service-single .description {
+  margin-bottom: 75px; }
+  @media screen and (max-width: 1050px) {
+    .service-single .description {
+      margin-bottom: 50px; } }
+  .service-single .description .title {
+    margin-bottom: 25px;
+    font: 400 28px "Exo 2", sans-serif;
+    color: #3b3d41; }
+  .service-single .description p {
+    margin-bottom: 25px;
+    font: 400 16px/30px "PT sans", sans-serif;
+    color: #3b3d41; }
+
+.service-single .video {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #e2ebf2;
+  border-radius: 25px;
+  overflow: hidden; }
+  .service-single .video a {
+    position: relative;
+    display: block; }
+    .service-single .video a:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 131px;
+      height: 131px;
+      transform: translate(-50%, -50%);
+      background: transparent url(../images/orange_play_button.png) 0 0 no-repeat; }
+  .service-single .video img {
+    max-width: 100%; }
+  .service-single .video iframe {
+    display: block; }
+
+.service-single .advantages-wrap {
+  margin-bottom: 75px; }
+  @media screen and (max-width: 1050px) {
+    .service-single .advantages-wrap {
+      margin-bottom: 50px; } }
+
+.service-single .advantages {
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 18px; }
+  .service-single .advantages .title {
+    margin-bottom: 25px;
+    font: 400 28px "Exo 2", sans-serif;
+    color: #3b3d41;
+    text-align: center;
+    text-transform: none; }
+  .service-single .advantages .items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .service-single .advantages .items .item {
+      display: flex;
+      align-items: center;
+      flex: 1 1 240px;
+      max-width: 240px;
+      width: 33.33333333333333333%;
+      padding: 0 15px 25px 15px; }
+      @media screen and (max-width: 1200px) {
+        .service-single .advantages .items .item {
+          padding-bottom: 20px;
+          align-items: flex-start; } }
+      .service-single .advantages .items .item .image {
+        margin-right: 15px; }
+      .service-single .advantages .items .item .text {
+        font: 500 13px/21px "Exo 2", sans-serif;
+        text-transform: uppercase; }
+        .service-single .advantages .items .item .text strong {
+          font-weight: 800; }
+
+.service-single .service-price .title {
+  margin-bottom: 25px;
+  font: 400 28px "Exo 2", sans-serif;
+  color: #3b3d41;
+  text-align: center;
+  text-transform: none; }
+
+.service-single .service-price .price-table {
+  display: block;
+  margin-bottom: 75px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #e6ebf1;
+  overflow: hidden; }
+  @media screen and (max-width: 1050px) {
+    .service-single .service-price .price-table {
+      margin-bottom: 50px; } }
+  .service-single .service-price .price-table .tr {
+    display: flex; }
+    .service-single .service-price .price-table .tr .service {
+      flex: 1 1 65%;
+      width: 70%;
+      padding: 22px 25px 22px 60px;
+      font: 400 16px "PT sans", sans-serif;
+      color: #3b3d41;
+      background-color: #e6ebf1;
+      border-right: 1px solid #fff;
+      border-bottom: 1px solid #fff; }
+    .service-single .service-price .price-table .tr .price {
+      flex: 1 1 35%;
+      padding: 22px 25px 22px 25px;
+      font: 400 13px "PT sans", sans-serif;
+      color: #3b3d41;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: #e6ebf1;
+      border-bottom: 1px solid #fff; }
+    .service-single .service-price .price-table .tr .order-btn {
+      display: block;
+      margin: 25px auto;
+      padding: 15px 40px;
+      font: 500 14px/1.1 "Exo 2", sans-serif;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      background-color: #5189ff;
+      border-radius: 25px; }
+      .service-single .service-price .price-table .tr .order-btn:hover {
+        background-color: #3d75eb; }
+
+.service-single .work_examples {
+  margin-bottom: 75px; }
+  @media screen and (max-width: 1050px) {
+    .service-single .work_examples {
+      margin-bottom: 50px; } }
+  .service-single .work_examples .title {
+    margin-bottom: 28px; }
+  .service-single .work_examples .work_examples_slider .slide .details .what {
+    font-size: 11px;
+    text-transform: uppercase; }
+  .service-single .work_examples .work_examples_slider .slide .item .text-1 {
+    margin-bottom: 0px;
+    font-size: 13px;
+    color: #36383c; }
+  .service-single .work_examples .work_examples_slider .slide .item .text-2 {
+    font-size: 12px;
+    color: #36383c;
+    text-transform: uppercase; }
+
+.service-single .reviews-wrap {
+  position: relative;
+  margin-bottom: 75px; }
+  @media screen and (max-width: 1050px) {
+    .service-single .reviews-wrap {
+      margin-bottom: 50px; } }
+  .service-single .reviews-wrap .title {
+    margin-bottom: 20px;
+    font: 400 28px "Exo 2", sans-serif;
+    color: #3b3d41;
+    text-align: center;
+    text-transform: none; }
+  .service-single .reviews-wrap .more {
+    position: absolute;
+    top: 10px;
+    right: 30px; }
+  .service-single .reviews-wrap .reviews {
+    padding: 40px 25px; }
+    .service-single .reviews-wrap .reviews .slick-arrow {
+      border: 2px solid transparent;
+      border-left: 2px solid #e5e5e5;
+      border-top: 2px solid #e5e5e5; }
+    .service-single .reviews-wrap .reviews .item {
+      padding: 0 25px 0 25px;
+      border-bottom: none !important;
+      border-right: 1px solid #e0e1e3; }
+      .service-single .reviews-wrap .reviews .item .item {
+        border-bottom: none !important;
+        border-right: none !important; }
+
+.service-single .phone_send_form_1 {
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  margin-bottom: 75px !important;
+  padding: 35px 50px 45px 50px; }
+  @media screen and (max-width: 1050px) {
+    .service-single .phone_send_form_1 {
+      margin-bottom: 50px; } }
+  .service-single .phone_send_form_1 .text {
+    margin-right: 0;
+    margin-bottom: 15px; }
+  .service-single .phone_send_form_1 .form {
+    width: 100%; }
+    .service-single .phone_send_form_1 .form input[type="text"], .service-single .phone_send_form_1 .form input[type="tel"] {
+      width: auto;
+      flex: 1; }

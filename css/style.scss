@@ -7959,3 +7959,357 @@ footer{
 
 
 }
+
+
+
+
+
+// service-single
+.service-single {
+
+	.head {
+		display: flex;
+		align-items: center;
+		margin-top: 20px;
+		margin-bottom: 55px;
+		padding-left: 50px;
+		height: 240px;
+		border-radius: 30px;
+
+		.title {
+			font: 700 30px "Exo 2", sans-serif;
+			color: #5189ff;
+			text-transform: uppercase;
+		}
+	}
+
+	.side-nav {
+
+		ul, li {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		ul {
+			@media screen and (max-width: 991px) {
+				display: flex !important;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+		li {
+			@media screen and (max-width: 991px) {
+				margin-right: 20px !important;
+
+				&:last-child {
+					margin-right: 0 !important;
+				}
+			}
+		}
+
+		.title {
+			display: block;
+			color: #3b3d41;
+		}
+
+		.order-btn {
+			display: block;
+			margin-top: 30px;
+			padding: 15px;
+			font: 500 14px/1.1 "Exo 2", sans-serif;
+			color: #fff;
+			text-transform: uppercase;
+			text-align: center;
+			background-color: #5189ff;
+			border-radius: 25px;
+
+			@media screen and (max-width: 991px) {
+				margin: 0 !important;
+			}
+
+			&:hover {
+				background-color: #5189ff - 20;
+			}
+		}
+
+	}
+
+	.description {
+		margin-bottom: 75px;
+		@media screen and (max-width: 1050px) {
+			margin-bottom: 50px;
+		}
+
+		.title {
+			margin-bottom: 25px;
+			font: 400 28px "Exo 2", sans-serif;
+			color: #3b3d41;
+		}
+		p {
+			margin-bottom: 25px;
+			font: 400 16px/30px "PT sans", sans-serif;
+			color: #3b3d41;
+		}
+	}
+
+	.video {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		border: 1px solid #e2ebf2;
+		border-radius: 25px;
+		overflow: hidden;
+
+		a {
+			position: relative;
+			display: block;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 131px;
+				height: 131px;
+				transform: translate(-50%, -50%);
+				background: transparent url(../images/orange_play_button.png) 0 0 no-repeat;
+			}
+		}
+
+		img {
+			max-width: 100%;
+		}
+
+		iframe {
+			display: block;
+		}
+	}
+	
+	.advantages-wrap {
+		margin-bottom: 75px;
+		@media screen and (max-width: 1050px) {
+			margin-bottom: 50px;
+		}
+	}
+	.advantages {
+		padding: 25px;
+		background-color: #fff;
+		border-radius: 18px;
+
+		.title {
+			margin-bottom: 25px;
+			font: 400 28px "Exo 2", sans-serif;
+			color: #3b3d41;
+			text-align: center;
+			text-transform: none;
+		}
+
+		.items {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+
+			.item {
+				display: flex;
+				align-items: center;
+				flex: 1 1 240px;
+				max-width: 240px;
+				width: 33.33333333333333333%;
+				padding: 0 15px 25px 15px;
+
+				@media screen and (max-width: 1200px) {
+					padding-bottom: 20px;
+					align-items: flex-start;
+				}
+
+				.image {
+					margin-right: 15px;
+				}
+
+				.text {
+					font: 500 13px/21px "Exo 2", sans-serif;
+					text-transform: uppercase;
+
+					strong {
+						font-weight: 800;
+					}
+				}
+
+			}
+		}
+	}
+
+	.service-price {
+
+		.title {
+			margin-bottom: 25px;
+			font: 400 28px "Exo 2", sans-serif;
+			color: #3b3d41;
+			text-align: center;
+			text-transform: none;
+		}
+
+		.price-table {
+			display: block;
+			margin-bottom: 75px;
+			width: 100%;
+			border-radius: 20px;
+			border: 1px solid #ebf0f6 - 5;
+			overflow: hidden;
+
+			@media screen and (max-width: 1050px) {
+				margin-bottom: 50px;
+			}
+
+			.tr {
+				display: flex;
+
+				.service {
+					flex: 1 1 65%;
+					width: 70%;
+					padding: 22px 25px 22px 60px;
+					font: 400 16px "PT sans", sans-serif;
+					color: #3b3d41;
+					background-color: #ebf0f6 - 5;
+					border-right: 1px solid #fff;
+					border-bottom: 1px solid #fff;
+				}
+
+				.price {
+					flex: 1 1 35%;
+					padding: 22px 25px 22px 25px;
+					font: 400 13px "PT sans", sans-serif;
+					color: #3b3d41;
+					text-align: center;
+					text-transform: uppercase;
+					background-color: #ebf0f6 - 5;
+					border-bottom: 1px solid #fff;
+				}
+
+				.order-btn {
+					display: block;
+					margin: 25px auto;
+					padding: 15px 40px;
+					font: 500 14px/1.1 "Exo 2", sans-serif;
+					color: #fff;
+					text-transform: uppercase;
+					text-align: center;
+					background-color: #5189ff;
+					border-radius: 25px;
+
+					&:hover {
+						background-color: #5189ff - 20;
+					}
+				}
+			}
+		}
+	}
+
+	.work_examples {
+		margin-bottom: 75px;
+		@media screen and (max-width: 1050px) {
+			margin-bottom: 50px;
+		}
+
+		.title {
+			margin-bottom: 28px;
+		}
+
+		.work_examples_slider {
+
+			.slide {
+				
+				.details {
+
+					.what {
+						font-size: 11px;
+						text-transform: uppercase;
+					}
+				}
+
+				.item {
+
+					.text-1 {
+						margin-bottom: 0px;
+						font-size: 13px;
+						color: #3b3d41 - 5;
+					}
+
+					.text-2 {
+						font-size: 12px;
+						color: #3b3d41 - 5;
+						text-transform: uppercase;
+					}
+				}
+
+			}
+		}
+	}
+	
+	.reviews-wrap {
+		position: relative;
+		margin-bottom: 75px;
+		@media screen and (max-width: 1050px) {
+			margin-bottom: 50px;
+		}
+		
+		.title {
+			margin-bottom: 20px;
+			font: 400 28px "Exo 2", sans-serif;
+			color: #3b3d41;
+			text-align: center;
+			text-transform: none;
+		}
+
+		.more {
+			position: absolute;
+			top: 10px;
+			right: 30px;
+		}
+			
+		.reviews {
+			padding: 40px 25px;
+
+			.slick-arrow {
+				border: 2px solid transparent;
+				border-left: 2px solid #e5e5e5;
+				border-top: 2px solid #e5e5e5;
+			}
+
+			.item {
+				padding: 0 25px 0 25px;
+				border-bottom: none !important;
+				border-right: 1px solid #e5e6e8 - 5;
+				.item {
+					border-bottom: none !important;
+					border-right: none !important;
+				}
+			}
+		}
+	}
+
+	.phone_send_form_1 {
+		flex-direction: column !important;
+		align-items: flex-start !important;
+		margin-bottom: 75px !important;
+		padding: 35px 50px 45px 50px;
+
+		@media screen and (max-width: 1050px) {
+			margin-bottom: 50px;
+		}
+
+		.text {
+			margin-right: 0;
+			margin-bottom: 15px;
+		}
+
+		.form {
+			width: 100%;
+			input[type="text"], input[type="tel"] {
+				width: auto;
+				flex: 1;
+			}
+		}
+	}
+}

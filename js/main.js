@@ -1083,4 +1083,35 @@ $(document).ready(function() {
 		slidesToShow: 4,
 		slidesToScroll: 1
 	});
+
+	/* service-single-reviews */
+	$('#service-single-reviews').slick({
+		arrows: true,
+		dots: false,
+		infinite: false,
+		// variableWidth: true,
+		lazyLoad: 'ondemand',
+		lazyLoadBuffer: 0,
+		slidesToShow: 2,
+		slidesToScroll: 1
+	});
+	$('.slick-slider .slick-prev').html('<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300"><path fill="#7d848e" d="M133.1,245.8c0-3.5-1.2-8.1-4.6-11.5L57,163.8h226.2c10.4,0,17.3-6.9,17.3-16.2s-6.9-16.2-17.3-16.2H55.8 l71.5-69.2c3.5-3.5,4.6-6.9,4.6-11.5s-1.2-8.1-4.6-11.5c-6.9-6.9-17.3-6.9-23.1,0L5.1,137.3c-1.2,1.2-1.2,2.3-2.3,2.3 c-3.5,4.6-3.5,10.4-1.2,15c1.2,2.3,2.3,3.5,3.5,5.8l0,0l99.2,98.1c6.9,6.9,17.3,6.9,23.1,0C130.8,255,133.1,250.4,133.1,245.8z"/></svg>');
+	$('.slick-slider .slick-next').html('<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 26 20" enable-background="new 0 0 26 20"><path fill="#7d848e" d="M14.5,1.5c0,0.3,0.1,0.7,0.4,1l6.2,6.1H1.5C0.6,8.6,0,9.2,0,10c0,0.8,0.6,1.4,1.5,1.4h19.7l-6.2,6 c-0.3,0.3-0.4,0.6-0.4,1c0,0.4,0.1,0.7,0.4,1c0.6,0.6,1.5,0.6,2,0l8.6-8.5c0.1-0.1,0.1-0.2,0.2-0.2c0.3-0.4,0.3-0.9,0.1-1.3 c-0.1-0.2-0.2-0.3-0.3-0.5l0,0L17,0.4c-0.6-0.6-1.5-0.6-2,0C14.7,0.7,14.5,1.1,14.5,1.5z"/></svg>');
+
+
+
+
+	$('.service-single .video a').on('click', function(e) {
+		e.preventDefault();
+		var video = $(this).parent();
+		var video_h = $(this).height();
+		var video_w = $(this).width();
+		if ( video_h > 0 && video_w > 0 ) {
+			var video_url = $(this).attr('href');
+			$(this).parent().html('<iframe src="'+ video_url +'" frameborder="0" allowfullscreen></iframe>');
+			video.find('iframe').height(video_h);
+			video.find('iframe').width(video_w);
+		}
+	});
+
 });
